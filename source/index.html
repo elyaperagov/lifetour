@@ -4,10 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Lifetour</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="fonts/Montserrat-Regular.woff2" rel="preload" as="font">
+  <link href="fonts/Montserrat-Medium.woff2" rel="preload" as="font">
+  <link href="fonts/Montserrat-Bold.woff2" rel="preload" as="font">
+  <link href="fonts/Montserrat-ExtraBold.woff2" rel="preload" as="font">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+          <path d="M22.7825 40.1768L28.2395 34.447L34.4468 40.1768H45.0878L28.1713 23.6013L11.3911 40.1768H22.7825Z" fill="white"/>
+          <path d="M38.4033 13.5742L30.3543 21.7596L35.6749 27.2166L38.4033 24.4881L53.3418 39.3583C49.9312 48.4305 41.2 54.9106 30.9 54.9106C17.6669 54.9106 6.95762 44.2014 6.95762 30.9682C7.02583 17.7351 17.7351 7.02583 30.9682 7.02583C42.7007 7.02583 52.5232 15.5523 54.5014 26.6709L61.7318 34.3106C61.8683 33.2192 61.9365 32.0596 61.9365 30.9682C61.9365 22.7146 58.7305 14.9384 52.8643 9.07219C46.998 3.20596 39.2219 0 30.9682 0C22.6464 0 14.9384 3.20596 9.07219 9.07219C3.20596 14.9384 0 22.6464 0 30.9682C0 39.2901 3.20596 46.998 9.07219 52.8643C14.9384 58.7305 22.7146 61.9365 30.9682 61.9365C39.2219 61.9365 46.998 58.7305 52.8643 52.8643C56.4795 49.249 59.0716 44.9517 60.504 40.2451C60.7769 39.4265 60.9815 38.5398 61.1861 37.7212L54.9106 31.1047L38.4033 13.5742Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0">
+          <rect width="61.8683" height="61.8683" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+        </div>
+        <div class="header__info">
+          <p>Lifetour</p>
+          <span>Организация походов в горы</span>
+        </div>
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Туры</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Обучение</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__phone">
+        <a class="header__link" href="tel:88007253232">
+          <p>8 800 725 32 32</p>
+        </a>
+      </div>
+    </div>
+    <section class="general">
+      <div class="general__inner">
+        <h1>Походы в горы России</h1>
+        <div class="general__slogan">
+          <p>Профессионально организовываем экскурсии на самые красивые вершины страны</p>
+        </div>
+        <button type="button" class="button button--info" aria-label="Выбрать экскурсию">Выбрать экскурсию</button>
+      </div>
+      <div class="social">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" aria-label="Lifetour в VK">
+              <svg width="27" height="26" class="social-icon">
+                <use xlink:href="#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Lifetour в Фейсбуке">
+              <svg width="27" height="26" class="social-icon">
+                <use xlink:href="#ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#" aria-label="Lifetour в Instagram">
+              <svg width="27" height="26" class="social-icon">
+                <use xlink:href="#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
 </body>
 </html>

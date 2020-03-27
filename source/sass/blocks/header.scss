@@ -1,0 +1,41 @@
+.header {
+  background-image: url("../img/main-background@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -27px;
+}
+
+.header__inner {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  // @media (max-width: $desktops) {
+  padding: 13px 10px 0 10px;
+  // }
+}
+
+.header__logo {
+  padding: 0 20px 0 0;
+}
+
+.header__info p {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.header__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+}

@@ -1,0 +1,32 @@
+.general {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.general__inner {
+  padding: 184px 0 144px 10px;
+  max-width: 600px;
+}
+
+.general__slogan {
+  max-width: 495px;
+}
+
+.general__inner h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 55px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.general__inner p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 148.6%;
+  padding: 10px 0 10px;
+  color: #ffffff;
+  margin: 0;
+}
