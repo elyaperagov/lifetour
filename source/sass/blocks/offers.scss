@@ -1,0 +1,90 @@
+.offers {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  // background-image: url("../img/clouds@1x.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: 50% 50%;
+  // overflow: hidden;
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   background-image: url("../img/clouds@1x.png");
+  //   background-repeat: no-repeat;
+  //   width: 100%;
+  //   left: 0;
+  //   height: 979px;
+  //   top: -680px;
+  //   // z-index: 2;
+  //   background-size: cover;
+  // }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/unsplash-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 559px;
+    height: 961px;
+    right: -37px;
+    top: -20px;
+    z-index: -1;
+  }
+}
+
+.offers__inner {
+  max-width: 1220px;
+  padding: 0 15px 0 10px;
+  margin: 0 auto;
+}
+
+.offers__inner h2 {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  color: #2d383f;
+  margin: 0;
+  padding: 92px 0 0;
+}
+
+.offers__list {
+  color: #ffffff;
+  padding: 50px 0 0;
+}
+
+.offers__list ul {
+  @include list;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.offers__item {
+  width: 384.17px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--elbrus {
+    background-image: url("../img/elbrus-desktop@1x.jpg");
+  }
+
+  &--belukha {
+    background-image: url("../img/belukha-desktop@1x.jpg");
+  }
+
+  &--blacksea {
+    background-image: url("../img/blacksea-desktop@1x.jpg");
+  }
+}
+
+.offers__info {
+  display: flex;
+  padding-top: 160px;
+}
+
+.offers__additional {
+  display: flex;
+}
