@@ -1,12 +1,11 @@
+.offers-wrapper {
+  overflow: hidden;
+}
+
 .offers {
   position: relative;
-  z-index: 2;
-  overflow: hidden;
-  // background-image: url("../img/clouds@1x.png");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: 50% 50%;
   // overflow: hidden;
+  // background-position: 100% 41%;
 
   // &::before {
   //   position: absolute;
@@ -31,14 +30,14 @@
     height: 961px;
     right: -37px;
     top: -20px;
-    z-index: -1;
+    z-index: 1;
   }
 }
 
 .offers__inner {
-  max-width: 1220px;
   padding: 0 15px 0 10px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .offers__inner h2 {
@@ -47,12 +46,13 @@
   line-height: 43px;
   color: #2d383f;
   margin: 0;
-  padding: 92px 0 0;
+  padding: 74px 0 0;
 }
 
 .offers__list {
   color: #ffffff;
   padding: 50px 0 0;
+  z-index: 2;
 }
 
 .offers__list ul {
@@ -80,9 +80,58 @@
   }
 }
 
+.offers__period {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 8px;
+
+  &--days {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/sun.svg");
+      width: 21.73px;
+      height: 22px;
+      top: 3px;
+      left: -30px;
+    }
+  }
+
+  &--nights {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/moon.svg");
+      width: 20px;
+      height: 20px;
+      top: 3px;
+      left: -30px;
+    }
+  }
+}
+
 .offers__info {
   display: flex;
-  padding-top: 160px;
+  justify-content: space-between;
+
+  &--elbrus {
+    padding: 206px 56px 0 22px;
+  }
+
+  &--belukha {
+    padding: 206px 38px 0 22px;
+  }
+
+  &--blacksea {
+    padding: 206px 45px 0 22px;
+  }
+}
+
+
+.offers__info p {
+  margin: 0;
 }
 
 .offers__additional {

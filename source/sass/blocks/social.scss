@@ -1,0 +1,14 @@
+.social ul {
+  @include list;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-bottom: 125px;
+}
+
+.social__item {
+  background-color: #0266c1;
+  width: 21.3px;
+  height: 21.3px;
+  margin-left: 18px;
+}

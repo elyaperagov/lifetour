@@ -1,0 +1,19 @@
+.about {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/about-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    width: 1071px;
+    height: 877px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.about__inner {
+  padding-left: 400px;
+}

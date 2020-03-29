@@ -1,0 +1,22 @@
+.study {
+  border-bottom: 1px solid #d9e7ea;
+}
+
+.study__process ul {
+  @include list;
+  display: flex;
+  flex-direction: row;
+}
+
+.study__item {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #0266c1;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+  }
+}

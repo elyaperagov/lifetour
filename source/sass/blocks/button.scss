@@ -9,3 +9,23 @@
   padding: 20px 38px 20px;
   width: 246px;
 }
+
+.button--offer {
+  width: 114.56px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  padding: 7px 0 6px 13px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/mark.svg");
+    width: 9px;
+    height: 13px;
+    left: 22px;
+    top: 8px;
+  }
+}

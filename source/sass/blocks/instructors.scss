@@ -1,0 +1,16 @@
+.instructors ul {
+  @include list;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 2;
+}
+
+.instructors__item {
+  width: 234px;
+  padding: 10px;
+}
+
+.instructors__item img {
+  text-align: center;
+}
