@@ -68,15 +68,18 @@
   background-size: cover;
 
   &--elbrus {
+    padding: 206px 56px 20px 22px;
     background-image: url("../img/elbrus-desktop@1x.jpg");
   }
 
   &--belukha {
     background-image: url("../img/belukha-desktop@1x.jpg");
+    padding: 206px 38px 20px 22px;
   }
 
   &--blacksea {
     background-image: url("../img/blacksea-desktop@1x.jpg");
+    padding: 206px 45px 20px 22px;
   }
 }
 
@@ -116,19 +119,26 @@
   display: flex;
   justify-content: space-between;
 
-  &--elbrus {
-    padding: 206px 56px 0 22px;
-  }
-
-  &--belukha {
-    padding: 206px 38px 0 22px;
-  }
-
-  &--blacksea {
-    padding: 206px 45px 0 22px;
-  }
+  // &--elbrus {
+  //   padding: 206px 56px 0 22px;
+  // }
+  //
+  // &--belukha {
+  //   padding: 206px 38px 0 22px;
+  // }
+  //
+  // &--blacksea {
+  //   padding: 206px 45px 0 22px;
+  // }
 }
 
+.offers__item h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  padding: 22px 0 20px;
+}
 
 .offers__info p {
   margin: 0;
@@ -136,4 +146,34 @@
 
 .offers__additional {
   display: flex;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  justify-content: space-between;
+}
+
+.offers__link {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/forward.svg");
+    background-repeat: no-repeat;
+    top: 3px;
+    left: 58.7%;
+    height: 14px;
+    width: 8px;
+  }
+}
+
+.offers__link p {
+  margin-top: 60px;
+  letter-spacing: 0.6px;
+  transform: translateX(-8px);
 }
