@@ -1,0 +1,18 @@
+.footer-nav {
+  flex-grow: 1;
+  padding: 9px 101px 0 85px;
+  color: black;
+}
+
+.footer-nav ul {
+  @include list;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-nav__link {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+}

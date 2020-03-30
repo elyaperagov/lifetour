@@ -1,5 +1,6 @@
 .about {
   display: flex;
+  padding-bottom: 50px;
 }
 
 .about__background {
@@ -7,7 +8,7 @@
   background-repeat: no-repeat;
   background-position: left top -56px;
   width: 50%;
-  height: 877px;
+  min-height: 614px;
   // z-index: -1;
 }
 
