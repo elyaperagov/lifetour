@@ -2,7 +2,7 @@
   padding: 0 16px 75px 13px;
 }
 
-.reviews__inner ul {
+.reviews__list {
   @include list;
   display: flex;
   flex-direction: row;

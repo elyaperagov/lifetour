@@ -49,13 +49,13 @@
   padding: 74px 0 0;
 }
 
-.offers__list {
+.offers__list-wrapper {
   color: #ffffff;
   padding: 50px 0 0;
   z-index: 2;
 }
 
-.offers__list ul {
+.offers__list {
   @include list;
   display: flex;
   flex-direction: row;
@@ -66,6 +66,7 @@
   width: 384.17px;
   background-repeat: no-repeat;
   background-size: cover;
+  flex-shrink: 0;
 
   &--elbrus {
     padding: 206px 56px 20px 22px;

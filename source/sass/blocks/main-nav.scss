@@ -3,7 +3,7 @@
   padding: 9px 101px 0 85px;
 }
 
-.main-nav ul {
+.main-nav__list {
   @include list;
   display: flex;
   flex-direction: row;

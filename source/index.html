@@ -33,7 +33,7 @@
           <span>Организация походов в горы</span>
         </div>
       <nav class="main-nav">
-        <ul>
+        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Туры</a>
           </li>
@@ -70,7 +70,7 @@
       </div>
       <div class="social">
         <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <ul>
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#" aria-label="Lifetour в VK">
               <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,9 +103,11 @@
       <section class="offers">
         <div class="offers__inner container">
           <h2>Ближайшие туры</h2>
-          <div class="offers__list">
-            <ul>
-              <li class="offers__item offers__item--elbrus">
+          <div class="offers__list-wrapper swiper-container">
+            <!--<button type="button" class="button button--left" aria-label="кнопка влево"></button>
+            <button type="button" class="button button--right" aria-label="конпка вправо"></button>-->
+            <div class="offers__list swiper-wrapper">
+              <div class="offers__item offers__item--elbrus swiper-slide">
                 <div class="offers__info">
                   <button type="button" class="button button--offer" aria-label="Тур на Кавказ">Кавказ</button>
                   <div class="offers__period offers__period--days">4 дня</div>
@@ -132,8 +134,64 @@
                     <span>до 15 чел.</span>
                   </div>
                 </div>
-              </li>
-              <li class="offers__item offers__item--belukha">
+              </div>
+              <div class="offers__item offers__item--elbrus swiper-slide">
+                <div class="offers__info">
+                  <button type="button" class="button button--offer" aria-label="Тур на Кавказ">Кавказ</button>
+                  <div class="offers__period offers__period--days">4 дня</div>
+                  <div class="offers__period offers__period--nights">3 ночи</div>
+                </div>
+                <h3>Путешествие вокруг Эльбруса</h3>
+                <div class="offers__additional">
+                  <div class="offers__difficulty">
+                    <p>Сложность</p>
+                    <svg width="79" height="14" viewBox="0 0 79 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 11.0412L12.135 13.65L10.9087 8.72975L15 5.42084L9.60676 4.98892L7.5 0.350037L5.39326 4.98892L0 5.42084L4.09126 8.72975L2.865 13.65L7.5 11.0412Z" fill="white"/>
+                    <path d="M23.5 11.0412L28.135 13.65L26.9087 8.72975L31 5.42084L25.6068 4.98892L23.5 0.350037L21.3933 4.98892L16 5.42084L20.0913 8.72975L18.865 13.65L23.5 11.0412Z" fill="white"/>
+                    <path d="M39.5 11.0412L44.135 13.65L42.9087 8.72975L47 5.42084L41.6068 4.98892L39.5 0.350037L37.3933 4.98892L32 5.42084L36.0913 8.72975L34.865 13.65L39.5 11.0412Z" fill="white"/>
+                    <path d="M55.7453 10.6054L55.5 10.4674L55.2547 10.6054L51.6307 12.6453L52.5764 8.85066L52.6535 8.54141L52.4057 8.34098L49.2878 5.81931L53.4332 5.48733L53.7267 5.46382L53.8485 5.19567L55.5 1.55921L57.1515 5.19568L57.2733 5.46382L57.5669 5.48733L61.7122 5.81931L58.5943 8.34098L58.3465 8.54141L58.4236 8.85066L59.3693 12.6453L55.7453 10.6054Z" stroke="#F3F3F3"/>
+                    <path d="M71.7453 10.6054L71.5 10.4674L71.2547 10.6054L67.6307 12.6453L68.5764 8.85066L68.6535 8.54141L68.4057 8.34098L65.2878 5.81931L69.4332 5.48733L69.7267 5.46382L69.8485 5.19567L71.5 1.55921L73.1515 5.19568L73.2733 5.46382L73.5669 5.48733L77.7122 5.81931L74.5943 8.34098L74.3465 8.54141L74.4236 8.85066L75.3693 12.6453L71.7453 10.6054Z" stroke="white"/>
+                    </svg>
+                  </div>
+                  <div class="offers__dates">
+                    <p>Даты набора</p>
+                    <span>12.06-19.06</span>
+                  </div>
+                  <div class="offers__groups">
+                    <p>Группа:</p>
+                    <span>до 15 чел.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="offers__item offers__item--elbrus swiper-slide">
+                <div class="offers__info">
+                  <button type="button" class="button button--offer" aria-label="Тур на Кавказ">Кавказ</button>
+                  <div class="offers__period offers__period--days">4 дня</div>
+                  <div class="offers__period offers__period--nights">3 ночи</div>
+                </div>
+                <h3>Путешествие вокруг Эльбруса</h3>
+                <div class="offers__additional">
+                  <div class="offers__difficulty">
+                    <p>Сложность</p>
+                    <svg width="79" height="14" viewBox="0 0 79 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 11.0412L12.135 13.65L10.9087 8.72975L15 5.42084L9.60676 4.98892L7.5 0.350037L5.39326 4.98892L0 5.42084L4.09126 8.72975L2.865 13.65L7.5 11.0412Z" fill="white"/>
+                    <path d="M23.5 11.0412L28.135 13.65L26.9087 8.72975L31 5.42084L25.6068 4.98892L23.5 0.350037L21.3933 4.98892L16 5.42084L20.0913 8.72975L18.865 13.65L23.5 11.0412Z" fill="white"/>
+                    <path d="M39.5 11.0412L44.135 13.65L42.9087 8.72975L47 5.42084L41.6068 4.98892L39.5 0.350037L37.3933 4.98892L32 5.42084L36.0913 8.72975L34.865 13.65L39.5 11.0412Z" fill="white"/>
+                    <path d="M55.7453 10.6054L55.5 10.4674L55.2547 10.6054L51.6307 12.6453L52.5764 8.85066L52.6535 8.54141L52.4057 8.34098L49.2878 5.81931L53.4332 5.48733L53.7267 5.46382L53.8485 5.19567L55.5 1.55921L57.1515 5.19568L57.2733 5.46382L57.5669 5.48733L61.7122 5.81931L58.5943 8.34098L58.3465 8.54141L58.4236 8.85066L59.3693 12.6453L55.7453 10.6054Z" stroke="#F3F3F3"/>
+                    <path d="M71.7453 10.6054L71.5 10.4674L71.2547 10.6054L67.6307 12.6453L68.5764 8.85066L68.6535 8.54141L68.4057 8.34098L65.2878 5.81931L69.4332 5.48733L69.7267 5.46382L69.8485 5.19567L71.5 1.55921L73.1515 5.19568L73.2733 5.46382L73.5669 5.48733L77.7122 5.81931L74.5943 8.34098L74.3465 8.54141L74.4236 8.85066L75.3693 12.6453L71.7453 10.6054Z" stroke="white"/>
+                    </svg>
+                  </div>
+                  <div class="offers__dates">
+                    <p>Даты набора</p>
+                    <span>12.06-19.06</span>
+                  </div>
+                  <div class="offers__groups">
+                    <p>Группа:</p>
+                    <span>до 15 чел.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="offers__item offers__item--belukha swiper-slide">
                 <div class="offers__info">
                   <button type="button" class="button button--offer" aria-label="Тур на Алтай">Алтай</button>
                   <div class="offers__period offers__period--days">14 дней</div>
@@ -160,8 +218,8 @@
                     <span>до 25 чел.</span>
                   </div>
                 </div>
-              </li>
-              <li class="offers__item offers__item--blacksea">
+              </div>
+              <div class="offers__item offers__item--blacksea swiper-slide">
                 <div class="offers__info">
                   <button type="button" class="button button--offer" aria-label="Тур в Адыгею">Адыгея</button>
                   <div class="offers__period offers__period--days">7 дней</div>
@@ -188,12 +246,13 @@
                     <span>до 22 чел.</span>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div class="offers__link">
             <p>Показать все туры</p>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="study">
@@ -205,7 +264,7 @@
           </p>
           <div class="instructors">
             <h3>Наши инструкторы</h3>
-            <ul>
+            <ul class="instructors__list">
               <li class="instructors__item">
                 <img src="img/prokofiev-desktop@1x.jpg" alt="инструктор Прокофьев">
                 <div class="instructors__inner">
@@ -273,7 +332,7 @@
           </div>
           <div class="study__process container">
             <h3>Процесс обучения</h3>
-            <ul>
+            <ul class="study__list">
               <li class="study__item">
                 <div class="study__img">
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -352,7 +411,7 @@
     <section class="reviews">
       <div class="reviews__inner container">
         <h2>Отзывы</h2>
-        <ul>
+        <ul class="reviews__list">
           <li class="reviews__item reviews__item--first">
             <div class="reviews__info">
               <img src="img/frolov-desktop@1x.jpg" alt="Александр Фролов отзыв">
@@ -472,7 +531,7 @@
         <span>Организация походов в горы</span>
       </div>
       <nav class="footer-nav">
-        <ul>
+        <ul class="footer-nav__list">
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#">Туры</a>
           </li>
@@ -501,7 +560,7 @@
     </div>
     <div class="footer-social">
       <h3 class="visually-hidden">Мы в социальных сетях</h3>
-      <ul>
+      <ul class="footer-social__list">
         <li class="footer-social__item">
           <a class="footer-social__link" href="#" aria-label="Lifetour в VK">
             <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -532,5 +591,10 @@
     </div>
   </footer>
   <script src="js/mask.min.js" type="text/javascript"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <!-- Initialize Swiper -->
+
 </body>
 </html>

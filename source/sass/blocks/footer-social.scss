@@ -1,4 +1,4 @@
-.footer-social ul {
+.footer-social__list {
   @include list;
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
 .footer-social__item {
   width: 28.3px;
   height: 28.3px;
-  border: 1px solid #2D383F;
+  border: 1px solid #2d383f;
   margin-right: 11px;
   margin-left: 11px;
   text-align: center;
