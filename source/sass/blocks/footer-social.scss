@@ -1,0 +1,27 @@
+.footer-social ul {
+  @include list;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social__item {
+  width: 28.3px;
+  height: 28.3px;
+  border: 1px solid #2D383F;
+  margin-right: 11px;
+  margin-left: 11px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.footer-social__conf {
+  text-align: center;
+}
+
+.footer-social__agreement {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 24px;
+}
