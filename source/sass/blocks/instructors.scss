@@ -1,3 +1,7 @@
+.instructors__swiper-container {
+  overflow: hidden;
+}
+
 .instructors__list {
   @include list;
   display: flex;
@@ -7,13 +11,13 @@
   z-index: 2;
 }
 
-.instructors h3 {
+.instructors__swiper-container h3 {
   margin: 0;
   padding: 44px 0 39px 1px;
   letter-spacing: 1.5px;
 }
 
-.instructors h4 {
+.instructors__swiper-container h4 {
   font-weight: bold;
   font-size: 14px;
   line-height: 19px;
@@ -21,7 +25,7 @@
   margin: 0;
 }
 
-.instructors p {
+.instructors__swiper-container p {
   font-size: 12px;
   line-height: 15px;
   margin-top: 9px;
@@ -40,7 +44,8 @@
 }
 
 .instructors__item {
-  width: 234px;
+  width: 232px;
+  flex-shrink: 0;
   padding: 9px 13px 0 16px;
   background: #ffffff;
   // opacity: 0.09;
@@ -51,4 +56,17 @@
 
 .instructors__item img {
   text-align: center;
+}
+
+
+.instructors__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.instructors__buttons {
+  display: flex;
+  transform: translateY(-30px);
+  margin-right: -6px;
 }

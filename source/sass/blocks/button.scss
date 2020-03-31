@@ -3,6 +3,7 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+  position: relative;
 
   &--info {
     padding: 20px 38px 20px;
@@ -16,7 +17,6 @@
     line-height: 17px;
     letter-spacing: 1px;
     padding: 7px 0 6px 13px;
-    position: relative;
 
     &::before {
       position: absolute;
@@ -37,13 +37,33 @@
     padding: 21px 0 19px 0;
   }
 
+  &--navigation {
+    width: 37px;
+    height: 35px;
+    margin: 2px;
+  }
+
   &--left {
-    width: 9px;
-    height: 13px;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/arrow-left.svg");
+      width: 13px;
+      height: 8px;
+      top: 15px;
+      left: 11px;
+    }
   }
 
   &--right {
-    width: 9px;
-    height: 13px;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/arrow-right.svg");
+      width: 13px;
+      height: 8px;
+      top: 15px;
+      left: 11px;
+    }
   }
 }

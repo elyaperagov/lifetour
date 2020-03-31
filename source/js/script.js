@@ -15,12 +15,22 @@
 //   }
 // });
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.offers__swiper-container', {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   freeMode: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  navigation: {
+    nextEl: '.offers__button-next',
+    prevEl: '.offers__button-prev',
+  },
+});
+
+var swiper = new Swiper('.instructors__swiper-container', {
+  slidesPerView: 5,
+  spaceBetween: 6,
+  freeMode: true,
+  navigation: {
+    nextEl: '.instructors__button-next',
+    prevEl: '.instructors__button-prev',
   },
 });

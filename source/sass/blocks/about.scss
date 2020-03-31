@@ -1,12 +1,12 @@
 .about {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 28px;
 }
 
 .about__background {
   background-image: url("../img/about-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: left top -56px;
+  background-position: left top -78px;
   width: 50%;
   min-height: 614px;
   // z-index: -1;
@@ -36,7 +36,7 @@
 
 .about__inner {
   width: 50%;
-  padding-top: 96px;
+  padding-top: 73px;
   padding-left: 52px;
   padding-right: 121px;
 }

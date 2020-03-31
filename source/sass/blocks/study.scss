@@ -7,7 +7,7 @@
     width: 100%;
     height: 1px;
     background-color: #d9e7ea;
-    bottom: 8px;
+    bottom: 31px;
   }
 }
 
@@ -49,7 +49,7 @@
 .study__item {
   position: relative;
   display: flex;
-  width: 25%;
+  flex-shrink: 0;
 
   &::after {
     position: absolute;
@@ -58,10 +58,31 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    bottom: -35px;
+    bottom: -11px;
+    left: 3px;
+  }
+
+  &--movement {
+    width: 240px;
+    margin-right: 81px;
+  }
+
+  &--equipment {
+    width: 260px;
+    margin-right: 64px;
+  }
+
+  &--ecology {
+    width: 210px;
+    margin-right: 123px;
+  }
+
+  &--obstacles {
+    width: 250px;
   }
 
   p {
+    // width: 217px;
     font-size: 16px;
     line-height: 23px;
     margin: 0;
