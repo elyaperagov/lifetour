@@ -16,13 +16,23 @@
 // });
 
 var swiper = new Swiper('.offers__swiper-container', {
-  slidesPerView: 3,
-  spaceBetween: 20,
   freeMode: true,
   navigation: {
     nextEl: '.offers__button-next',
     prevEl: '.offers__button-prev',
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      width: 785,
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    },
+  }
 });
 
 var swiper = new Swiper('.instructors', {

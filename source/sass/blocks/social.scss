@@ -1,9 +1,16 @@
+.social {
+  padding-top: 145px;
+
+  @media (max-width: $tablets-max) {
+    padding-top: 90px;
+  }
+}
+
 .social__list {
   @include list;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding-bottom: 125px;
 }
 
 .social__item {

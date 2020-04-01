@@ -38,6 +38,10 @@
   padding: 0 15px 0 10px;
   position: relative;
   z-index: 2;
+
+  @media (max-width: $tablets-max) {
+    padding: 0 112px;
+  }
 }
 
 .offers__inner h2 {
@@ -47,6 +51,12 @@
   color: #2d383f;
   margin: 0;
   padding: 74px 0 0;
+
+  @media (max-width: $tablets-max) {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 84px 0 0;
+  }
 }
 
 .offers__swiper-container {

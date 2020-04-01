@@ -4,12 +4,20 @@
 }
 
 .general__inner {
-  padding: 184px 0 143px;
-  max-width: 600px;
+  padding: 184px 0 126px;
+  // width: 600px;
+  @media (max-width: $tablets-max) {
+    padding: 123px 110px 91px;
+  }
 }
 
 .general__slogan {
   max-width: 495px;
+
+  @media (max-width: $tablets-max) {
+    max-width: 405px;
+    padding-bottom: 20px;
+  }
 }
 
 .general__inner h1 {
@@ -19,6 +27,12 @@
   line-height: 55px;
   color: #ffffff;
   margin: 0;
+
+  @media (max-width: $tablets-max) {
+    font-size: 35px;
+    line-height: 43px;
+    max-width: 310px;
+  }
 }
 
 .general__inner p {
@@ -29,4 +43,10 @@
   padding: 10px 0 10px;
   color: #ffffff;
   margin: 0;
+
+  @media (max-width: $tablets-max) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 0 10px;
+  }
 }
