@@ -25,12 +25,33 @@ var swiper = new Swiper('.offers__swiper-container', {
   },
 });
 
-var swiper = new Swiper('.instructors__swiper-container', {
+var swiper = new Swiper('.instructors', {
   slidesPerView: 5,
   spaceBetween: 6,
   freeMode: true,
   navigation: {
     nextEl: '.instructors__button-next',
     prevEl: '.instructors__button-prev',
+  },
+});
+
+var swiper = new Swiper('.reviews__inner', {
+  slidesPerView: 3,
+  spaceBetween: 17,
+  freeMode: true,
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+});
+
+var swiper = new Swiper('.gallery', {
+  slidesPerView: 'auto',
+  spaceBetween: 3,
+  loop: true,
+  freeMode: true,
+  navigation: {
+    nextEl: '.gallery__button-next',
+    prevEl: '.gallery__button-prev',
   },
 });

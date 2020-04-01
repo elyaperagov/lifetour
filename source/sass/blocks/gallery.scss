@@ -1,5 +1,10 @@
+.gallery {
+  overflow: hidden;
+}
+
 .gallery__inner {
   padding: 0 11px 44px 12px;
+  // overflow: hidden;
   // max-width: 720px;
 }
 
@@ -8,7 +13,7 @@
   font-size: 35px;
   line-height: 43px;
   margin: 0;
-  padding: 30px 0 12px 0;
+  padding: 30px 0 15px;
 }
 
 .gallery__inner p {
@@ -17,4 +22,20 @@
   line-height: 24px;
   max-width: 720px;
   padding-top: 6px;
+}
+
+.gallery__inner span {
+  font-weight: bold;
+}
+
+.gallery__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.gallery__buttons {
+  display: flex;
+  transform: translateY(-1px);
+  margin-right: -2px;
 }

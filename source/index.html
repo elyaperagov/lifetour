@@ -270,7 +270,7 @@
             за плечами которых десятки пройденных маршрутов Кавказа, Крыма,
             Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
           </p>
-          <div class="instructors__swiper-container">
+          <div class="instructors">
             <div class="instructors__title-wrapper">
               <h3>Наши инструкторы</h3>
               <div class="instructors__buttons">
@@ -452,17 +452,19 @@
     </section>
     <section class="reviews">
       <div class="reviews__inner container">
-        <h2>Отзывы</h2>
-        <div class="instructors__buttons">
-          <div class="instructors__button-prev">
-            <button type="button" class="button button--navigation button--left" aria-label="кнопка влево"></button>
-          </div>
-          <div class="instructors__button-next">
-            <button type="button" class="button button--navigation button--right" aria-label="кнопка вправо"></button>
+        <div class="reviews__title-wrapper">
+          <h2>Отзывы</h2>
+          <div class="reviews__buttons">
+            <div class="reviews__button-prev">
+              <button type="button" class="button button--navigation button--left" aria-label="кнопка влево"></button>
+            </div>
+            <div class="reviews__button-next">
+              <button type="button" class="button button--navigation button--right" aria-label="кнопка вправо"></button>
+            </div>
           </div>
         </div>
-        <ul class="reviews__list">
-          <li class="reviews__item reviews__item--first">
+        <ul class="reviews__list swiper-wrapper">
+          <li class="reviews__item reviews__item--first swiper-slide">
             <div class="reviews__info">
               <img src="img/frolov-desktop@1x.jpg" alt="Александр Фролов отзыв">
               <div class="reviews__user-info">
@@ -480,7 +482,7 @@
               </p>
             </div>
           </li>
-          <li class="reviews__item">
+          <li class="reviews__item reviews__item--second swiper-slide">
             <div class="reviews__info">
               <img src="img/oleynik-desktop@1x.jpg" alt="Светлана Олейник отзыв">
               <div class="reviews__user-info">
@@ -497,7 +499,7 @@
               </p>
             </div>
           </li>
-          <li class="reviews__item">
+          <li class="reviews__item reviews__item--third swiper-slide">
             <div class="reviews__info">
               <img src="img/bazhenova-desktop@1x.jpg" alt="Евгения Баженова отзыв">
               <div class="reviews__user-info">
@@ -515,28 +517,64 @@
               </p>
             </div>
           </li>
+          <li class="reviews__item reviews__item--first swiper-slide">
+            <div class="reviews__info">
+              <img src="img/frolov-desktop@1x.jpg" alt="Александр Фролов отзыв">
+              <div class="reviews__user-info">
+                <p>Фролов Александр</p>
+                <span>28 лет, Москва</span>
+              </div>
+            </div>
+            <div class="reviews__text">
+              <p>Осенью ходили в поход с друзьями. Впечатления исключительно положительные!
+                Инструкторы - настоящие эксперты - всему научили, все показали. Рассказали истории <br>о всех местах, которые мы так<br> или иначе посещали.
+              </p>
+              <p>
+                С уверенностью могу разделить жизнь <br>на до этого похода и после.
+                Настолько сильно не отдыхал душой и телом никогда. Всем рекомендую!
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
     <section class="gallery">
       <div class="gallery__inner container">
-        <h2>Фотогалерея</h2>
-        <p>
-          Добавляйте фото в Instagram с хэштегом <span>#лайфтур</span>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
-        </p>
+        <div class="gallery__title-wrapper">
+          <div class="gallery__title">
+            <h2>Фотогалерея</h2>
+            <p>
+              Добавляйте фото в Instagram с хэштегом <span>#лайфтур</span>, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+            </p>
+          </div>
+          <div class="gallery__buttons">
+            <div class="gallery__button-prev">
+              <button type="button" class="button button--navigation button--left" aria-label="кнопка влево"></button>
+            </div>
+            <div class="gallery__button-next">
+              <button type="button" class="button button--navigation button--right" aria-label="кнопка вправо"></button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="pictures">
-        <img src="img/man-desktop@1x.jpg" alt="Галерея фото№1">
-        <div class="pictures__column">
+      <div class="pictures swiper-wrapper">
+        <div class="pictures__item swiper-slide">
+          <img src="img/man-desktop@1x.jpg" alt="Галерея фото№1">
+        </div>
+        <div class="pictures__item pictures__item--column swiper-slide">
           <img src="img/picnic-desktop@1x.jpg" alt="Галерея фото№2">
           <img src="img/kompas-desktop@1x.jpg" alt="Галерея фото№3">
         </div>
-        <img src="img/mountain-desktop@1x.jpg" alt="Галерея фото№4">
-        <div class="pictures__column">
+        <div class="pictures__item swiper-slide">
+          <img src="img/mountain-desktop@1x.jpg" alt="Галерея фото№4">
+        </div>
+        <div class="pictures__item pictures__item--column swiper-slide">
           <img src="img/snowing-desktop@1x.jpg" alt="Галерея фото№5">
           <img src="img/night-desktop@1x.jpg" alt="Галерея фото№6">
         </div>
-        <img src="img/forest-desktop@1x.jpg" alt="Галерея фото№7">
+        <div class="pictures__item swiper-slide">
+          <img src="img/forest-desktop@1x.jpg" alt="Галерея фото№7">
+        </div>
       </div>
     </section>
     <section class="feedback">

@@ -2,7 +2,17 @@
   display: flex;
 }
 
-.pictures__column {
-  display: flex;
-  flex-direction: column;
+.pictures__item {
+  width: 277px;
+  flex-shrink: 0;
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+    width: 299px;
+
+    img {
+      margin-bottom: 4px;
+    }
+  }
 }

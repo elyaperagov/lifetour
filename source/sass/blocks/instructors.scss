@@ -1,4 +1,4 @@
-.instructors__swiper-container {
+.instructors {
   overflow: hidden;
 }
 
@@ -11,13 +11,13 @@
   z-index: 2;
 }
 
-.instructors__swiper-container h3 {
+.instructors h3 {
   margin: 0;
   padding: 44px 0 39px 1px;
   letter-spacing: 1.5px;
 }
 
-.instructors__swiper-container h4 {
+.instructors h4 {
   font-weight: bold;
   font-size: 14px;
   line-height: 19px;
@@ -25,7 +25,7 @@
   margin: 0;
 }
 
-.instructors__swiper-container p {
+.instructors p {
   font-size: 12px;
   line-height: 15px;
   margin-top: 9px;
