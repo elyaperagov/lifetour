@@ -15,20 +15,34 @@
   padding: 61px 16px 0 13px;
   position: relative;
   z-index: 2;
+
+  @media (max-width: $tablets-max) {
+    padding: 98px 112px 0 110px;
+  }
 }
 
 .study__inner p {
   max-width: 805px;
   line-height: 26px;
   margin-top: 6px;
+
+  @media (max-width: $tablets-max) {
+    max-width: 480px;
+  }
 }
 
 .study__process h3 {
   margin: 0;
-  padding: 61px 0 25px 0;
+  padding: 22px 0 25px 0;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+
+  @media (max-width: $tablets-max) {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 26px 0 25px;
+  }
 }
 
 .study__inner h2 {
@@ -36,6 +50,12 @@
   font-size: 35px;
   line-height: 43px;
   margin-bottom: 26px;
+
+  @media (max-width: $tablets-max) {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .study__list {
@@ -44,12 +64,23 @@
   flex-direction: row;
   justify-content: flex-start;
   padding: 10px 0 36px;
+
+  @media (max-width: $tablets-max) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .study__item {
   position: relative;
   display: flex;
   flex-shrink: 0;
+  width: 25%;
+
+  @media (max-width: $tablets-max) {
+    padding: 9px 0;
+    width: 43%;
+  }
 
   &::after {
     position: absolute;
@@ -60,25 +91,52 @@
     border-radius: 50%;
     bottom: -11px;
     left: 3px;
+
+    @media (max-width: $tablets-max) {
+      bottom: 1px;
+      left: 101px;
+    }
   }
 
   &--movement {
-    width: 240px;
-    margin-right: 81px;
+    // width: 240px;
+    margin-right: 21px;
+
+    @media (max-width: $tablets-max) {
+      margin-right: 0;
+      order: 1;
+    }
   }
 
   &--equipment {
-    width: 260px;
-    margin-right: 64px;
+    // width: 260px;
+    margin-right: 26px;
+
+    @media (max-width: $tablets-max) {
+      margin-right: 0;
+      order: 2;
+    }
   }
 
   &--ecology {
-    width: 210px;
-    margin-right: 123px;
+    // width: 210px;
+    margin-right: 37px;
+
+    @media (max-width: $tablets-max) {
+      margin-right: 0;
+      padding-top: 123px;
+      order: 4;
+    }
   }
 
   &--obstacles {
-    width: 250px;
+    // width: 250px;
+
+    @media (max-width: $tablets-max) {
+      margin-right: 0;
+      padding-top: 123px;
+      order: 3;
+    }
   }
 
   p {
@@ -86,6 +144,12 @@
     font-size: 16px;
     line-height: 23px;
     margin: 0;
-    padding: 1px 0 16px 10px;
+    padding: 1px 0 16px 14px;
+
+  @media (max-width: $tablets-max) {
+    padding: 6px 0 16px 14px;
+    font-size: 14px;
+    line-height: 20px;
+    }
   }
 }

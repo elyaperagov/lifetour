@@ -63,6 +63,10 @@
   color: #ffffff;
   padding: 50px 0 0;
   z-index: 2;
+
+  @media (max-width: $tablets-max) {
+    padding: 57px 0 0;
+  }
 }
 
 .offers__list {
@@ -164,11 +168,6 @@
 }
 
 .offers__link {
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
   position: relative;
 
   &::after {
@@ -180,13 +179,27 @@
     left: 58.7%;
     height: 14px;
     width: 8px;
+
+  @media (max-width: $tablets-max) {
+    left: 68.5%;
+    }
   }
 }
 
 .offers__link p {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
   margin-top: 60px;
   letter-spacing: 0.6px;
   transform: translateX(-8px);
+
+  @media (max-width: $tablets-max) {
+    margin-top: 42px;
+    transform: translateX(-12px);
+  }
 }
 
 .offers__title-wrapper {

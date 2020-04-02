@@ -43,6 +43,18 @@ var swiper = new Swiper('.instructors', {
     nextEl: '.instructors__button-next',
     prevEl: '.instructors__button-prev',
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 6,
+      slidesPerView: 'auto',
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 6,
+    },
+  }
 });
 
 var swiper = new Swiper('.reviews__inner', {
