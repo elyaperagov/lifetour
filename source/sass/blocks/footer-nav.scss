@@ -1,7 +1,13 @@
 .footer-nav {
   flex-grow: 1;
   padding: 5px 101px 0 85px;
-  color: black;
+  color: #000000;
+
+  @media (max-width: $tablets-max) {
+    // padding: 5px 70px 0 196px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .footer-nav__list {
@@ -9,10 +15,54 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: $tablets-max) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 485px;
+  }
 }
 
 .footer-nav__link {
   cursor: pointer;
   color: #000000;
   text-decoration: none;
+}
+
+
+.footer-nav__item {
+  @media (max-width: $tablets-max) {
+    font-size: 14px;
+    line-height: 22px;
+    width: 161px;
+    padding-left: 57px;
+    padding-top: 12px;
+
+    &--tours {
+      order: 1;
+    }
+
+    &--study {
+      order: 4;
+    }
+
+    &--about {
+      order: 2;
+    }
+
+    &--reviews {
+      order: 5;
+    }
+
+    &--gallery {
+      order: 3;
+      padding-left: 34px;
+    }
+
+    &--contacts {
+      order: 6;
+      padding-left: 34px;
+    }
+  }
 }

@@ -3,6 +3,10 @@
   display: flex;
   justify-content: center;
   padding: 5px 0 31px 0;
+
+  @media (max-width: $tablets-max) {
+    padding: 49px 0 14px;
+  }
 }
 
 .footer-social__item {
@@ -13,6 +17,11 @@
   margin-left: 11px;
   text-align: center;
   padding-top: 4px;
+
+  @media (max-width: $tablets-max) {
+    margin-right: 9px;
+    margin-left: 6px;
+  }
 }
 
 .footer-social__conf {
