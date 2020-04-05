@@ -6,6 +6,7 @@
 
   @media (max-width: $tablets-max) {
     padding: 49px 0 14px;
+    margin: 2px 0 0 -5px;
   }
 }
 
@@ -19,8 +20,8 @@
   padding-top: 4px;
 
   @media (max-width: $tablets-max) {
-    margin-right: 20px;
-    margin-left: -5px;
+    margin-right: 5px;
+    margin-left: 10px;
   }
 }
 

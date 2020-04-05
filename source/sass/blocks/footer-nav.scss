@@ -1,6 +1,6 @@
 .footer-nav {
   flex-grow: 1;
-  padding: 5px 101px 0 85px;
+  padding: 5px 99px 0 70px;
   color: #000000;
 
   @media (max-width: $tablets-max) {
@@ -39,9 +39,9 @@
   @media (max-width: $tablets-max) {
     font-size: 14px;
     line-height: 22px;
-    width: 161px;
-    padding-left: 35px;
-    padding-top: 12px;
+    width: 160px;
+    padding-left: 52px;
+    padding-top: 10px;
 
     &--tours {
       order: 1;
@@ -61,12 +61,12 @@
 
     &--gallery {
       order: 3;
-      padding-left: 15px;
+      padding-left: 28px;
     }
 
     &--contacts {
       order: 6;
-      padding-left: 15px;
+      padding-left: 28px;
     }
   }
 

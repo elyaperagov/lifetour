@@ -57,7 +57,7 @@ var swiper = new Swiper('.reviews__inner', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       spaceBetween: 17,
       width: 1200,
     },
