@@ -22,6 +22,10 @@
     justify-content: space-between;
     max-width: 485px;
   }
+
+  @media (max-width: $mobiles-max) {
+    max-width: 275px;
+  }
 }
 
 .footer-nav__link {
@@ -36,7 +40,7 @@
     font-size: 14px;
     line-height: 22px;
     width: 161px;
-    padding-left: 57px;
+    padding-left: 35px;
     padding-top: 12px;
 
     &--tours {
@@ -57,12 +61,17 @@
 
     &--gallery {
       order: 3;
-      padding-left: 34px;
+      padding-left: 15px;
     }
 
     &--contacts {
       order: 6;
-      padding-left: 34px;
+      padding-left: 15px;
     }
+  }
+
+  @media (max-width: $mobiles-max) {
+    width: 90px;
+    padding-left: 0;
   }
 }
