@@ -16,12 +16,16 @@
 }
 
 .study__inner {
-  padding: 61px 16px 0 13px;
+  padding: 64px 16px 0 13px;
   position: relative;
   z-index: 2;
 
   @media (max-width: $tablets-max) {
     padding: 98px 112px 0 110px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding: 75px 20px 0 19px;
   }
 }
 
@@ -32,6 +36,18 @@
 
   @media (max-width: $tablets-max) {
     max-width: 480px;
+  }
+
+  @media (min-width: $tablets) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobiles-max) {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100%;
   }
 }
 
@@ -49,6 +65,11 @@
       font-size: 18px;
       line-height: 22px;
       padding: 26px 0 25px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 }
@@ -69,6 +90,18 @@
     top: 86px;
     transform: translateX(-3px);
   }
+
+  @media (max-width: $mobiles-max) {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 240px;
+    background: url("../img/line-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 20px;
+    // transform: translateX(-3px);
+  }
 }
 
 
@@ -81,7 +114,13 @@
   @media (max-width: $tablets-max) {
     font-size: 25px;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 20px;
   }
 }
 
@@ -105,6 +144,11 @@
     &::after {
       display: none;
     }
+  }
+
+  @media (max-width: $mobiles-max) {
+    flex-direction: column;
+    padding: 6px 0 36px 40px;
   }
 }
 
@@ -141,6 +185,10 @@
     @media (max-width: $tablets-max) {
       margin-right: 0;
       order: 1;
+
+      @media (max-width: $mobiles-max) {
+        padding: 4px 0 0 0;
+      }
 
       &::after {
         bottom: -13px;
@@ -195,6 +243,11 @@
     }
   }
 
+  @media (max-width: $mobiles-max) {
+    width: 100%;
+    padding: 8px 0 0 0;
+  }
+
   p {
     font-size: 16px;
     line-height: 23px;
@@ -205,6 +258,10 @@
       padding: 6px 0 16px 14px;
       font-size: 14px;
       line-height: 20px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      padding: 6px 0 13px 13px;
     }
   }
 }

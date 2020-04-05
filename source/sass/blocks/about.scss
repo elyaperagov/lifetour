@@ -1,6 +1,14 @@
 .about {
   display: flex;
-  padding-bottom: 33px;
+  padding-bottom: 101px;
+
+  @media (max-width: $tablets-max) {
+    padding-bottom: 33px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    flex-direction: column;
+  }
 }
 
 .about__background {
@@ -19,6 +27,16 @@
     width: 47.7%;
     min-height: 347px;
   }
+
+  @media (max-width: $mobiles-max) {
+    background-image: url("../img/about-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    // background-position: left top 57px;
+    background-position: left top -46px;
+    width: 100%;
+    background-size: auto;
+    min-height: 305px;
+  }
 }
 
 .about h2 {
@@ -31,6 +49,11 @@
   @media (max-width: $tablets-max) {
     font-size: 25px;
     line-height: 30px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    font-size: 22px;
+    line-height: 27px;
   }
 }
 
@@ -45,6 +68,11 @@
     font-size: 18px;
     line-height: 22px;
     padding: 10px 0 23px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -70,6 +98,11 @@
     padding-left: 35px;
     padding-right: 110px;
   }
+
+  @media (max-width: $mobiles-max) {
+    padding: 0 20px 0 19px;
+    width: 100%;
+  }
 }
 
 .about__story {
@@ -85,12 +118,23 @@
     padding-bottom: 66px;
     max-width: 278px;
   }
+
+  @media (max-width: $mobiles-max) {
+    padding-bottom: 34px;
+    max-width: 100%;
+  }
 }
 
 .about__purpose {
   @media (max-width: $tablets-max) {
     margin-left: -268px;
     padding-right: 10px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    margin-left: 0;
+    width: 100%;
+    padding-right: 6px;
   }
 }
 
@@ -105,5 +149,9 @@
     font-size: 18px;
     line-height: 22px;
     padding: 10px 0 15px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding: 10px 0 18px;
   }
 }

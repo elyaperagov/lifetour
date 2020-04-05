@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lifetour</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -10,7 +10,7 @@
   <link href="fonts/Montserrat-Medium.woff2" rel="preload" as="font">
   <link href="fonts/Montserrat-Bold.woff2" rel="preload" as="font">
   <link href="fonts/Montserrat-ExtraBold.woff2" rel="preload" as="font">
-  <link href="fonts/Montserrat-ExtraBoldItalic.woff2" rel="preload" as="font">
+  <link href="fonts/Montserrat-Light.woff2" rel="preload" as="font">
 </head>
 <body>
   <header class="header">
@@ -20,69 +20,82 @@
           <span>Открыть меню</span>
         </button>
       </div>
-      <div class="header__logo-wrapper">
-        <div class="header__logo">
-          <svg class="header__image header__image--desktop" width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
-            <path d="M22.7825 40.1768L28.2395 34.447L34.4468 40.1768H45.0878L28.1713 23.6013L11.3911 40.1768H22.7825Z" fill="white"/>
-            <path d="M38.4033 13.5742L30.3543 21.7596L35.6749 27.2166L38.4033 24.4881L53.3418 39.3583C49.9312 48.4305 41.2 54.9106 30.9 54.9106C17.6669 54.9106 6.95762 44.2014 6.95762 30.9682C7.02583 17.7351 17.7351 7.02583 30.9682 7.02583C42.7007 7.02583 52.5232 15.5523 54.5014 26.6709L61.7318 34.3106C61.8683 33.2192 61.9365 32.0596 61.9365 30.9682C61.9365 22.7146 58.7305 14.9384 52.8643 9.07219C46.998 3.20596 39.2219 0 30.9682 0C22.6464 0 14.9384 3.20596 9.07219 9.07219C3.20596 14.9384 0 22.6464 0 30.9682C0 39.2901 3.20596 46.998 9.07219 52.8643C14.9384 58.7305 22.7146 61.9365 30.9682 61.9365C39.2219 61.9365 46.998 58.7305 52.8643 52.8643C56.4795 49.249 59.0716 44.9517 60.504 40.2451C60.7769 39.4265 60.9815 38.5398 61.1861 37.7212L54.9106 31.1047L38.4033 13.5742Z" fill="white"/>
-            </g>
-            <defs>
-            <clipPath id="clip0">
-            <rect width="61.8683" height="61.8683" fill="white"/>
-            </clipPath>
-            </defs>
-          </svg>
-          <svg class="header__image header__image--tablet" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
-            <path d="M13.4925 23.7941L16.7243 20.4007L20.4004 23.7941H26.7024L16.6839 13.9775L6.74609 23.7941H13.4925Z" fill="white"/>
-            <path d="M22.7437 8.03908L17.9768 12.8868L21.1278 16.1186L22.7437 14.5027L31.5908 23.3093C29.5709 28.6822 24.4 32.5199 18.3 32.5199C10.4629 32.5199 4.12054 26.1775 4.12054 18.3404C4.16093 10.5033 10.5033 4.16093 18.3404 4.16093C25.2888 4.16093 31.106 9.21061 32.2775 15.7954L36.5597 20.3199C36.6405 19.6735 36.6809 18.9868 36.6809 18.3404C36.6809 13.4523 34.7822 8.84703 31.308 5.37286C27.8338 1.89868 23.2285 0 18.3404 0C13.4119 0 8.84703 1.89868 5.37286 5.37286C1.89868 8.84703 0 13.4119 0 18.3404C0 23.2689 1.89868 27.8338 5.37286 31.308C8.84703 34.7822 13.4523 36.6809 18.3404 36.6809C23.2285 36.6809 27.8338 34.7822 31.308 31.308C33.4491 29.1669 34.9842 26.6219 35.8325 23.8345C35.9941 23.3497 36.1153 22.8245 36.2365 22.3398L32.5199 18.4212L22.7437 8.03908Z" fill="white"/>
-            </g>
-            <defs>
-            <clipPath id="clip0">
-            <rect width="36.6405" height="36.6405" fill="white"/>
-            </clipPath>
-            </defs>
-          </svg>
+      <div class="header__content">
+        <div class="header__logo-wrapper">
+          <div class="header__logo">
+            <svg class="header__image header__image--desktop" width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M22.7825 40.1768L28.2395 34.447L34.4468 40.1768H45.0878L28.1713 23.6013L11.3911 40.1768H22.7825Z" fill="white"/>
+              <path d="M38.4033 13.5742L30.3543 21.7596L35.6749 27.2166L38.4033 24.4881L53.3418 39.3583C49.9312 48.4305 41.2 54.9106 30.9 54.9106C17.6669 54.9106 6.95762 44.2014 6.95762 30.9682C7.02583 17.7351 17.7351 7.02583 30.9682 7.02583C42.7007 7.02583 52.5232 15.5523 54.5014 26.6709L61.7318 34.3106C61.8683 33.2192 61.9365 32.0596 61.9365 30.9682C61.9365 22.7146 58.7305 14.9384 52.8643 9.07219C46.998 3.20596 39.2219 0 30.9682 0C22.6464 0 14.9384 3.20596 9.07219 9.07219C3.20596 14.9384 0 22.6464 0 30.9682C0 39.2901 3.20596 46.998 9.07219 52.8643C14.9384 58.7305 22.7146 61.9365 30.9682 61.9365C39.2219 61.9365 46.998 58.7305 52.8643 52.8643C56.4795 49.249 59.0716 44.9517 60.504 40.2451C60.7769 39.4265 60.9815 38.5398 61.1861 37.7212L54.9106 31.1047L38.4033 13.5742Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="61.8683" height="61.8683" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <svg class="header__image header__image--tablet" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M13.4925 23.7941L16.7243 20.4007L20.4004 23.7941H26.7024L16.6839 13.9775L6.74609 23.7941H13.4925Z" fill="white"/>
+              <path d="M22.7437 8.03908L17.9768 12.8868L21.1278 16.1186L22.7437 14.5027L31.5908 23.3093C29.5709 28.6822 24.4 32.5199 18.3 32.5199C10.4629 32.5199 4.12054 26.1775 4.12054 18.3404C4.16093 10.5033 10.5033 4.16093 18.3404 4.16093C25.2888 4.16093 31.106 9.21061 32.2775 15.7954L36.5597 20.3199C36.6405 19.6735 36.6809 18.9868 36.6809 18.3404C36.6809 13.4523 34.7822 8.84703 31.308 5.37286C27.8338 1.89868 23.2285 0 18.3404 0C13.4119 0 8.84703 1.89868 5.37286 5.37286C1.89868 8.84703 0 13.4119 0 18.3404C0 23.2689 1.89868 27.8338 5.37286 31.308C8.84703 34.7822 13.4523 36.6809 18.3404 36.6809C23.2285 36.6809 27.8338 34.7822 31.308 31.308C33.4491 29.1669 34.9842 26.6219 35.8325 23.8345C35.9941 23.3497 36.1153 22.8245 36.2365 22.3398L32.5199 18.4212L22.7437 8.03908Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="36.6405" height="36.6405" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <svg class="header__image header__image--mobile" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M11.1701 19.6984L13.8456 16.8891L16.889 19.6984H22.1062L13.8121 11.5715L5.58496 19.6984H11.1701Z" fill="white"/>
+              <path d="M18.8288 6.65531L14.8825 10.6686L17.4911 13.3441L18.8288 12.0063L26.153 19.297C24.4808 23.7451 20.2 26.9222 15.15 26.9222C8.66193 26.9222 3.41126 21.6716 3.41126 15.1835C3.44471 8.69538 8.69538 3.44471 15.1835 3.44471C20.9358 3.44471 25.7517 7.62518 26.7216 13.0765L30.2666 16.8222C30.3335 16.2871 30.3669 15.7186 30.3669 15.1835C30.3669 11.1368 28.7951 7.32418 25.9189 4.44802C23.0427 1.57186 19.2302 0 15.1835 0C11.1033 0 7.32418 1.57186 4.44802 4.44802C1.57186 7.32418 0 11.1033 0 15.1835C0 19.2636 1.57186 23.0427 4.44802 25.9189C7.32418 28.7951 11.1368 30.3669 15.1835 30.3669C19.2302 30.3669 23.0427 28.7951 25.9189 25.9189C27.6914 24.1464 28.9623 22.0394 29.6646 19.7318C29.7984 19.3305 29.8987 18.8957 29.9991 18.4944L26.9222 15.2504L18.8288 6.65531Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="30.3335" height="30.3335" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="header__text">
+            <p>Lifetour</p>
+            <span>Организация походов в горы</span>
+          </div>
         </div>
-        <div class="header__text">
-          <p>Lifetour</p>
-          <span>Организация походов в горы</span>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Туры</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Обучение</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__phone">
+          <a class="header__link" href="tel:88007253232">
+            <p>8 800 725 32 32</p>
+          </a>
         </div>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Туры</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Обучение</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Отзывы</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__phone">
-        <a class="header__link" href="tel:88007253232">
-          <p>8 800 725 32 32</p>
-        </a>
       </div>
     </div>
     <section class="general">
       <div class="general__inner">
         <h1>Походы в горы России</h1>
         <div class="general__slogan">
-          <p>Профессионально организовываем экскурсии на самые красивые вершины страны</p>
+          <p>Профессионально организовываем экскурсии<br> на самые красивые вершины страны</p>
         </div>
         <button type="button" class="button button--info" aria-label="Выбрать экскурсию">Выбрать экскурсию</button>
         <div class="social">
@@ -136,11 +149,11 @@
               <div class="offers__item offers__item--elbrus swiper-slide">
                 <div class="offers__info">
                   <button type="button" class="button button--offer" aria-label="Тур на Кавказ">Кавказ</button>
-                  <div class="offers__period offers__period--days">4 дня</div>
-                  <div class="offers__period offers__period--nights">3 ночи</div>
+                  <div class="offers__period offers__period--days"><span>4 дня</span></div>
+                  <div class="offers__period offers__period--nights"><span>3 ночи</span></div>
                 </div>
                 <h3>Путешествие вокруг Эльбруса</h3>
-                <div class="offers__additional">
+                <div class="offers__additional offers__additional--elbrus-tour">
                   <div class="offers__difficulty">
                     <p>Сложность</p>
                     <svg width="79" height="14" viewBox="0 0 79 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,8 +177,8 @@
               <div class="offers__item offers__item--belukha swiper-slide">
                 <div class="offers__info">
                   <button type="button" class="button button--offer" aria-label="Тур на Алтай">Алтай</button>
-                  <div class="offers__period offers__period--days">14 дней</div>
-                  <div class="offers__period offers__period--nights">13 ночей</div>
+                  <div class="offers__period offers__period--days"><span>14 дней</span></div>
+                  <div class="offers__period offers__period--nights"><span>13 ночей</span></div>
                 </div>
                 <h3>Путь к подножию Белухи</h3>
                 <div class="offers__additional">
@@ -192,11 +205,11 @@
               <div class="offers__item offers__item--blacksea swiper-slide">
                 <div class="offers__info">
                   <button type="button" class="button button--offer" aria-label="Тур в Адыгею">Адыгея</button>
-                  <div class="offers__period offers__period--days">7 дней</div>
-                  <div class="offers__period offers__period--nights">6 ночей</div>
+                  <div class="offers__period offers__period--days"><span>7 дней</span></div>
+                  <div class="offers__period offers__period--nights"><span>6 ночей</span></div>
                 </div>
-                <h3>Через Фишт к Черному морю</h3>
-                <div class="offers__additional">
+                <h3>Через Фишт<br> к Черному морю</h3>
+                <div class="offers__additional offers__additional--blacksea-tour">
                   <div class="offers__difficulty">
                     <p>Сложность</p>
                     <svg width="79" height="14" viewBox="0 0 79 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -284,7 +297,7 @@
       <section class="study">
         <div class="study__inner container">
           <h2>Обучение</h2>
-          <p>Обучение проводится квалифицированными специалистами,
+          <p>Обучение проводится квалифицированными специалистами,<br>
             за плечами которых десятки пройденных маршрутов Кавказа, Крыма,
             Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
           </p>
@@ -498,8 +511,8 @@
                 Инструкторы - настоящие эксперты - всему научили, все показали. Рассказали истории <br>о всех местах, которые мы так<br> или иначе посещали.
               </p>
               <p>
-                С уверенностью могу разделить жизнь <br>на до этого похода и после.
-                Настолько сильно не отдыхал душой и телом никогда. Всем рекомендую!
+                С уверенностью могу разделить жизнь <br>&nbsp;на до этого похода и после.
+                Настолько сильно не отдыхал душой и телом никогда. <br>Всем рекомендую!
               </p>
             </div>
           </li>
@@ -601,7 +614,7 @@
     <section class="feedback">
       <div class="feedback__form-wrap">
         <h2>Остались вопросы?</h2>
-        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        <p>Заполните форму<br> и наш оператор свяжется с вами для консультации.</p>
         <form method="POST" action="https://echo.htmlacademy.ru">
           <div class="feedback__fieldset">
             <div class="feedback__item">

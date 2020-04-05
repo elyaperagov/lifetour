@@ -34,6 +34,13 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0;
+    padding: 49px 0 39px 1px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 44px 0 32px 1px;
   }
 }
 

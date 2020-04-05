@@ -6,10 +6,18 @@
   width: 277px;
   flex-shrink: 0;
 
+  @media (max-width: $mobiles-max) {
+    width: 160px;
+  }
+
   &--column {
     display: flex;
     flex-direction: column;
     width: 299px;
+
+    @media (max-width: $mobiles-max) {
+      width: 172px;
+    }
 
     img {
       margin-bottom: 4px;
