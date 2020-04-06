@@ -24,4 +24,7 @@
   margin-left: 18px;
   text-align: center;
   // padding-top: 2px;
+  @media (max-width: $tablets-max) {
+    margin-left: 16px;
+  }
 }

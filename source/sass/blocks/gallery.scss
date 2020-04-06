@@ -3,7 +3,7 @@
 }
 
 .gallery__inner {
-  padding: 0 11px 44px 12px;
+  padding: 0 11px 44px 14px;
   // overflow: hidden;
   // max-width: 720px;
 
@@ -63,6 +63,10 @@
   display: flex;
   transform: translateY(-1px);
   margin-right: -2px;
+
+  @media (max-width: $tablets-max) {
+    transform: translateY(2px);
+  }
 }
 
 .gallery__title {

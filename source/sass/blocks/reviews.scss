@@ -1,9 +1,9 @@
 .reviews__inner {
-  padding: 0 10px 75px 12px;
+  padding: 0 10px 81px 15px;
   overflow: hidden;
 
   @media (max-width: $tablets-max) {
-    padding: 0 112px 67px;
+    padding: 0 112px 89px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -42,13 +42,29 @@
   width: 385.76px;
   background: #ffffff;
   border: 1px solid #ffffff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-  padding: 44px 7px 31px 37px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding: 46px 7px 23px 30px;
   flex-shrink: 0;
 
-  @media (max-width: $tablets-max) {
-    width: 388.76px;
-    padding: 46px 17px 45px 35px;
+  &:first-child {
+    @media (min-width: $desktops) {
+      padding: 44px 12px 23px 35px;
+    }
+
+    @media (min-width: $tablets) {
+      padding: 46px 12px 23px 35px;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $desktops) {
+      padding: 41px 7px 23px 38px;
+    }
+
+    @media (min-width: $tablets) {
+      width: 388.76px;
+      padding: 46px 17px 23px 35px;
+    }
   }
 
   // &--first {
@@ -68,7 +84,7 @@
   // }
   // margin-right: 15px;
   @media (max-width: $mobiles-max) {
-    padding: 50px 8px 12px 12px;
+    padding: 43px 8px 12px 12px;
   }
 }
 
@@ -96,7 +112,7 @@
 
 .reviews__user-info p {
   margin: 0;
-  padding: 29px 0 5px;
+  padding: 33px 0 3px;
   font-size: 14px;
   font-weight: bold;
   line-height: 19px;
@@ -116,6 +132,7 @@
 .reviews__text p {
   margin: 0;
   padding-bottom: 20px;
+  max-width: 343px;
 }
 
 .reviews__title-wrapper {
@@ -125,6 +142,10 @@
 
   @media (max-width: $tablets-max) {
     padding-bottom: 15px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding-bottom: 22px;
   }
 }
 

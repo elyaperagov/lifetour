@@ -13,9 +13,13 @@
     background-size: cover;
     width: 559px;
     height: 961px;
-    right: -37px;
-    top: -20px;
+    right: -4px;
+    top: -39px;
     z-index: 1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/unsplash-desktop@2x.png");
+    }
   }
 }
 
@@ -25,7 +29,7 @@
   z-index: 2;
 
   @media (max-width: $tablets-max) {
-    padding: 0 112px;
+    padding: 0 112px 0 114px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -39,12 +43,12 @@
   line-height: 43px;
   color: #2d383f;
   margin: 0;
-  padding: 74px 0 0;
+  padding: 72px 0 0;
 
   @media (max-width: $tablets-max) {
     font-size: 25px;
     line-height: 30px;
-    padding: 84px 0 0;
+    padding: 82px 0 0;
   }
 
   @media (max-width: $mobiles-max) {
@@ -81,6 +85,7 @@
   background-size: cover;
   flex-shrink: 0;
   padding: 206px 56px 20px 22px;
+  height: 412px;
 
   @media (max-width: $mobiles-max) {
     padding: 153px 14px 20px 8px;
@@ -92,6 +97,10 @@
     padding: 206px 56px 20px 22px;
     background-image: url("../img/elbrus-desktop@1x.jpg");
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/elbrus-desktop@2x.jpg");
+    }
+
     @media (max-width: $mobiles-max) {
       padding: 153px 14px 20px 8px;
     }
@@ -101,6 +110,10 @@
     background-image: url("../img/belukha-desktop@1x.jpg");
     padding: 206px 38px 20px 22px;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/belukha-desktop@2x.jpg");
+    }
+
     @media (max-width: $mobiles-max) {
       padding: 153px 14px 20px 8px;
     }
@@ -109,6 +122,10 @@
   &--blacksea {
     background-image: url("../img/blacksea-desktop@1x.jpg");
     padding: 206px 45px 20px 22px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/blacksea-desktop@2x.jpg");
+    }
 
     @media (max-width: $mobiles-max) {
       padding: 153px 14px 20px 8px;
@@ -194,10 +211,10 @@
   padding: 22px 40px 20px 0;
 
   @media (max-width: $tablets-max) {
-    padding: 22px 40px 20px 0;
+    padding: 22px 34px 20px 0;
   }
 
-  @media (max-width: $tablets-max) {
+  @media (max-width: $mobiles-max) {
     padding: 22px 13px 20px 0;
   }
 }
@@ -236,6 +253,9 @@
 }
 
 .offers__link {
+  text-align: center;
+  margin-top: 60px;
+  transform: translateX(-8px);
   position: relative;
 
   &::after {
@@ -249,28 +269,27 @@
     width: 8px;
 
     @media (max-width: $tablets-max) {
-      left: 68.5%;
+      left: 70.5%;
     }
   }
-}
-
-.offers__link p {
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.6px;
-  transform: translateX(-8px);
 
   @media (max-width: $tablets-max) {
-    margin-top: 42px;
-    transform: translateX(-12px);
+    margin-top: 44px;
+    transform: translateX(-10px);
   }
 
   @media (max-width: $mobiles-max) {
     margin-top: 28px;
+  }
+
+  a {
+    @include link;
+    color: #000000;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -285,6 +304,10 @@
   transform: translateY(10px);
   margin-right: -4px;
 
+  @media (max-width: $tablets-max) {
+    transform: translateY(8px);
+  }
+
   @media (max-width: $mobiles-max) {
     transform: translateY(-2px);
   }
@@ -293,7 +316,3 @@
 .offers__dates {
   margin-left: -9px;
 }
-
-// .offers__groups {
-//   transform: translateX(-4px);
-// }

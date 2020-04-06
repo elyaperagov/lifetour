@@ -2,47 +2,53 @@
 'use strict';
 var swiper = new Swiper('.offers__swiper-container', {
   freeMode: true,
+  loop: true,
   navigation: {
     nextEl: '.offers__button-next',
     prevEl: '.offers__button-prev',
   },
   breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      width: 1196,
+    },
     768: {
       slidesPerView: 2,
       spaceBetween: 20,
       width: 785,
     },
     320: {
-      loop: true,
-      slidesPerView: 'auto',
-      spaceBetween: 20,
+      slidesPerView: 2,
+      spaceBetween: 38,
+      width: 600,
     },
   }
 });
 
 var swiper = new Swiper('.instructors', {
-  slidesPerView: 5,
-  spaceBetween: 6,
+  // slidesPerView: 5,
+  // spaceBetween: 6,
   freeMode: true,
   navigation: {
     nextEl: '.instructors__button-next',
     prevEl: '.instructors__button-prev',
   },
   breakpoints: {
+    1024: {
+      width: 1196,
+      slidesPerView: 5,
+      spaceBetween: 7,
+    },
     768: {
       // slidesPerView: 2,
-      spaceBetween: 6,
+      spaceBetween: 8,
       slidesPerView: 'auto',
     },
-    // 1024: {
-    //   loop: true,
-    //   slidesPerView: 'auto',
-    //   spaceBetween: 6,
-    // },
     320: {
-      loop: true,
+      // loop: true,
       slidesPerView: 'auto',
-      spaceBetween: 20,
+      spaceBetween: 6,
     },
   }
 });
@@ -56,21 +62,21 @@ var swiper = new Swiper('.reviews__inner', {
     prevEl: '.reviews__button-prev',
   },
   breakpoints: {
+    1024: {
+      width: 1225,
+      slidesPerView: 3,
+      spaceBetween: 18,
+    },
     768: {
-      slidesPerView: 'auto',
+      slidesPerView: 2,
       spaceBetween: 17,
-      width: 1200,
+      width: 1000,
     },
     320: {
       // loop: true,
       width: 610,
       slidesPerView: 2,
     },
-    // 1024: {
-    //   loop: true,
-    //   slidesPerView: 'auto',
-    //   spaceBetween: 6,
-    // },
   }
 });
 
