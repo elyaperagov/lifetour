@@ -32,11 +32,12 @@
     background-repeat: no-repeat;
     // background-position: bottom -45px center;
     background-size: cover;
-    padding-top: 160px;
+    padding-top: 159px;
     padding-bottom: 104px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/clouds-mobile@2x.png");
+      background-position: bottom -29px center;
     }
   }
 }

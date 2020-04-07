@@ -10,6 +10,11 @@
 
   @media (max-width: $tablets-max) {
     flex-direction: column;
+    padding: 39px 11px 0 13px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    flex-direction: column;
     padding: 44px 11px 0 13px;
   }
 }
