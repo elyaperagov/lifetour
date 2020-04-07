@@ -1,14 +1,12 @@
 .general {
   max-width: 1200px;
   margin: 0 auto;
-  background: url("../img/trekking.png");
-  background-repeat: no-repeat;
-  background-position: left top 159px;
 }
 
 .general__inner {
   padding: 184px 0 126px 3px;
   // width: 600px;
+
   @media (max-width: $tablets-max) {
     padding: 123px 112px 94px;
   }
@@ -45,6 +43,34 @@
   line-height: 55px;
   color: #ffffff;
   margin: 0;
+
+  &::after {
+    position: absolute;
+    content: "TREKKING";
+    font-weight: 900;
+    font-size: 93px;
+    line-height: 113px;
+    top: 249px;
+    left: 8.4%;
+    color: #f5f9fc;
+    opacity: 0.2;
+    letter-spacing: 7px;
+
+    @media (max-width: $tablets-max) {
+      font-size: 69px;
+      line-height: 84px;
+      top: 172px;
+      left: 117px;
+      letter-spacing: 5px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      font-size: 41px;
+      line-height: 50px;
+      top: 133px;
+      left: 24px;
+    }
+  }
 
   @media (max-width: $tablets-max) {
     font-size: 35px;

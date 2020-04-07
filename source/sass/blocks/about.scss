@@ -19,6 +19,9 @@
   min-height: 544px;
   background-size: contain;
   // z-index: -1;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-desktop@2x.jpg");
+  }
 
   @media (max-width: $tablets-max) {
     background-image: url("../img/about-tablet@1x.jpg");
@@ -26,6 +29,10 @@
     background-position: left top 55px;
     width: 49.5%;
     min-height: 347px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $mobiles-max) {
@@ -34,9 +41,14 @@
     // background-position: left top 57px;
     background-position: left top;
     width: 100%;
-    background-size: auto;
-    min-height: 339px;
+    background-size: contain;
+    min-height: 351px;
     transform: translateY(-11px);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-mobile@2x.jpg");
+      background-position: left top -7px;
+    }
   }
 }
 
@@ -55,7 +67,7 @@
   @media (max-width: $mobiles-max) {
     font-size: 22px;
     line-height: 27px;
-    padding: 29px 0 34px;
+    padding: 13px 0 34px;
   }
 }
 

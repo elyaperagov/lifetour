@@ -8,6 +8,10 @@
   padding-bottom: 254px;
   color: #ffffff;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/clouds-desktop@2x.png");
+  }
+
   @media (max-width: $tablets-max) {
     background-image: url("../img/clouds-tablet@1x.png");
     background-repeat: no-repeat;
@@ -15,6 +19,11 @@
     background-size: cover;
     padding-top: 210px;
     padding-bottom: 189px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/clouds-tablet@2x.png");
+      background-position: bottom -39px center;
+    }
   }
 
 
@@ -25,6 +34,10 @@
     background-size: cover;
     padding-top: 160px;
     padding-bottom: 104px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/clouds-mobile@2x.png");
+    }
   }
 }
 

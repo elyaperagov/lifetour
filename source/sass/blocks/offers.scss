@@ -20,7 +20,56 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/unsplash-desktop@2x.png");
     }
+
+    @media (max-width: $tablets-max) {
+      background-image: url("../img/unsplash-tablet@1x.png");
+      width: 294px;
+      right: 0;
+      top: 116px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/unsplash-tablet@2x.png");
+      }
+    }
+
+    @media (max-width: $mobiles-max) {
+      background-image: url("../img/unsplash-mobile@1x.png");
+      height: 828px;
+      width: 214px;
+      top: 36px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/unsplash-mobile@2x.png");
+      }
+    }
   }
+
+  // &::before {
+  //   position: absolute;
+  //   content: "Ближайшие туры";
+  //   font-weight: 800;
+  //   font-size: 55px;
+  //   line-height: 67px;
+  //   font-weight: 800;
+  //   top: 56px;
+  //   left: 120px;
+  //   color: #2d383f;
+  //   opacity: 0.03;
+  //
+  //   @media (max-width: $tablets-max) {
+  //     font-size: 40px;
+  //     line-height: 49px;
+  //     top: 71px;
+  //     left: 110px;
+  //   }
+  //
+  //   @media (max-width: $mobiles-max) {
+  //     font-size: 30px;
+  //     line-height: 37px;
+  //     top: 40px;
+  //     left: 17px;
+  //   }
+  // }
 }
 
 .offers__inner {
@@ -44,6 +93,32 @@
   color: #2d383f;
   margin: 0;
   padding: 72px 0 0;
+
+  &::before {
+    position: absolute;
+    content: "Ближайшие туры";
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 67px;
+    top: 56px;
+    left: 11px;
+    color: #2d383f;
+    opacity: 0.03;
+
+    @media (max-width: $tablets-max) {
+      font-size: 40px;
+      line-height: 49px;
+      top: 71px;
+      left: 110px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      font-size: 30px;
+      line-height: 37px;
+      top: 40px;
+      left: 17px;
+    }
+  }
 
   @media (max-width: $tablets-max) {
     font-size: 25px;
@@ -103,6 +178,12 @@
 
     @media (max-width: $mobiles-max) {
       padding: 153px 14px 20px 8px;
+
+      background-image: url("../img/elbrus-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/elbrus-mobile@2x.jpg");
+      }
     }
   }
 
@@ -114,8 +195,15 @@
       background-image: url("../img/belukha-desktop@2x.jpg");
     }
 
+
     @media (max-width: $mobiles-max) {
       padding: 153px 14px 20px 8px;
+
+      background-image: url("../img/belukha-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/belukha-mobile@2x.jpg");
+      }
     }
   }
 
@@ -127,8 +215,15 @@
       background-image: url("../img/blacksea-desktop@2x.jpg");
     }
 
+
     @media (max-width: $mobiles-max) {
       padding: 153px 14px 20px 8px;
+
+      background-image: url("../img/blacksea-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/blacksea-mobile@2x.jpg");
+      }
     }
   }
 }
