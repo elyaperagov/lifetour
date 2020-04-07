@@ -56,6 +56,7 @@ var swiper = new Swiper('.instructors', {
 var swiper = new Swiper('.reviews__inner', {
   slidesPerView: 3,
   spaceBetween: 17,
+  loop: true,
   freeMode: true,
   navigation: {
     nextEl: '.reviews__button-next',
@@ -97,23 +98,40 @@ var swiper = new Swiper('.gallery', {
 });
 
 
-window.addEventListener("DOMContentLoaded", function() {
-    var u;
-
-    function e(e) {
-        e.keyCode && (u = e.keyCode), this.selectionStart < 3 && e.preventDefault();
-        var t = "+7 (___) ___ ____",
-            n = 0,
-            r = t.replace(/\D/g, ""),
-            a = this.value.replace(/\D/g, ""),
-            i = t.replace(/[_\d]/g, function(e) {
-                return n < a.length ? a.charAt(n++) || r.charAt(n) : e
-            }); - 1 !== (n = i.indexOf("_")) && (n < 5 && (n = 3), i = i.slice(0, n));
-        var l = t.substr(0, this.value.length).replace(/_+/g, function(e) {
-            return "\\d{1," + e.length + "}"
-        }).replace(/[+()]/g, "\\$&");
-        (!(l = new RegExp("^" + l + "$")).test(this.value) || this.value.length < 5 || 47 < u && u < 58) && (this.value = i), "blur" === e.type && this.value.length < 5 && (this.value = "")
+window.addEventListener('DOMContentLoaded', function () {
+  var keyCode;
+  function mask(event) {
+    event.keyCode && (keyCode = event.keyCode);
+    var pos = this.selectionStart;
+    if (pos < 3) event.preventDefault();
+    var matrix = '+7 (___) ___ ____',
+      i = 0,
+      def = matrix.replace(/\D/g, ''),
+      val = this.value.replace(/\D/g, ''),
+      newValue = matrix.replace(/[_\d]/g, function (a) {
+        return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+      });
+    i = newValue.indexOf('_');
+    if (i !== -1) {
+      i < 5 && (i = 3);
+      newValue = newValue.slice(0, i);
     }
-    var t = document.querySelector("#feedback__phone-input");
-    t.addEventListener("input", e, !1), t.addEventListener("focus", e, !1), t.addEventListener("blur", e, !1), t.addEventListener("keydown", e, !1)
+    var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+        function (a) {
+          return '\\d{1,' + a.length + '}';
+        }).replace(/[+()]/g, '\\$&');
+    reg = new RegExp('^' + reg + '$');
+    if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
+      this.value = newValue;
+    }
+    if (event.type === 'blur' && this.value.length < 5) {
+      this.value = '';
+    }
+  }
+
+  var inputForm = document.querySelector('#feedback__phone-input');
+  inputForm.addEventListener('input', mask, false);
+  inputForm.addEventListener('focus', mask, false);
+  inputForm.addEventListener('blur', mask, false);
+  inputForm.addEventListener('keydown', mask, false);
 });

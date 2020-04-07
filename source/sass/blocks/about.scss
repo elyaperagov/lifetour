@@ -58,6 +58,33 @@
   line-height: 43px;
   margin: 0;
   padding: 29px 0 32px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "О нас";
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 67px;
+    top: 16px;
+    left: -1px;
+    color: #2d383f;
+    opacity: 0.03;
+
+    @media (max-width: $tablets-max) {
+      font-size: 40px;
+      line-height: 49px;
+      top: 14px;
+      left: -1px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      font-size: 30px;
+      line-height: 37px;
+      top: 8px;
+      left: 0;
+    }
+  }
 
   @media (max-width: $tablets-max) {
     font-size: 25px;
