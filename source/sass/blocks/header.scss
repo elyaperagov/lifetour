@@ -38,7 +38,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 9px 20px 0 19px;
+    padding: 9px 20px 0 21px;
   }
 }
 
@@ -205,6 +205,10 @@
 .header__menu {
   @media (min-width: $desktops) {
     display: none;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding-top: 7px;
   }
 }
 

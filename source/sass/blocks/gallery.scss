@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 0 20px 33px 19px;
+    padding: 0 20px 31px 21px;
   }
 }
 
@@ -93,6 +93,10 @@
 
   @media (max-width: $tablets-max) {
     transform: translateY(2px);
+  }
+
+  @media (max-width: $mobiles-max) {
+    transform: translateY(-3px);
   }
 }
 

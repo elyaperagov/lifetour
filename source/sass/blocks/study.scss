@@ -71,7 +71,7 @@
 
   h3 {
     margin: 0;
-    padding: 22px 0 25px 0;
+    padding: 26px 0 25px;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -85,7 +85,7 @@
     @media (max-width: $mobiles-max) {
       font-size: 16px;
       line-height: 20px;
-      padding: 26px 0 23px;
+      padding: 29px 0 23px;
     }
   }
 }

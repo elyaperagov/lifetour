@@ -63,7 +63,7 @@
 .instructors__inner {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0 0;
+  padding: 18px 0 0;
 }
 
 .instructors__social {
@@ -77,20 +77,13 @@
 .instructors__item {
   width: 232px;
   flex-shrink: 0;
-  padding: 9px 13px 0 16px;
+  padding: 9px 15px 0 14px;
   background: #ffffff;
-  // opacity: 0.09;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 
-  &:nth-child(2) {
-    @media (min-width: $desktops) {
-      padding: 9px 12px 0 16px;
-    }
-  }
-
-  &:first-child .instructors__inner {
+  &:nth-child(5n+1) .instructors__inner {
     padding: 16px 0 0 0;
   }
 
@@ -115,7 +108,7 @@
   margin-right: -6px;
 
   @media (max-width: $tablets-max) {
-    transform: translateY(-21px);
-    margin-right: -1px;
+    transform: translateY(-23px);
+    margin-right: -5px;
   }
 }

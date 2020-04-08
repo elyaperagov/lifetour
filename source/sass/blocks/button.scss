@@ -59,6 +59,10 @@
       font-size: 14px;
       line-height: 21px;
     }
+
+    @media (max-width: $mobiles-max) {
+      padding: 16px 0;
+    }
   }
 
   &--navigation {

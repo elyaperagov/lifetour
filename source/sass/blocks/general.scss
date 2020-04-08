@@ -4,7 +4,7 @@
 }
 
 .general__inner {
-  padding: 184px 0 126px 3px;
+  padding: 184px 0 126px 1px;
   // width: 600px;
 
   @media (max-width: $tablets-max) {
@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 74px 22px 90px 19px;
+    padding: 74px 22px 90px 20px;
   }
 }
 
