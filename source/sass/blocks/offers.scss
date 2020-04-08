@@ -43,33 +43,6 @@
       }
     }
   }
-
-  // &::before {
-  //   position: absolute;
-  //   content: "Ближайшие туры";
-  //   font-weight: 800;
-  //   font-size: 55px;
-  //   line-height: 67px;
-  //   font-weight: 800;
-  //   top: 56px;
-  //   left: 120px;
-  //   color: #2d383f;
-  //   opacity: 0.03;
-  //
-  //   @media (max-width: $tablets-max) {
-  //     font-size: 40px;
-  //     line-height: 49px;
-  //     top: 71px;
-  //     left: 110px;
-  //   }
-  //
-  //   @media (max-width: $mobiles-max) {
-  //     font-size: 30px;
-  //     line-height: 37px;
-  //     top: 40px;
-  //     left: 17px;
-  //   }
-  // }
 }
 
 .offers__inner {
@@ -161,6 +134,11 @@
   flex-shrink: 0;
   padding: 206px 56px 20px 22px;
   height: 412px;
+
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 
   @media (max-width: $mobiles-max) {
     padding: 153px 14px 20px 8px;
@@ -284,18 +262,6 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-
-  // &--elbrus {
-  //   padding: 206px 56px 0 22px;
-  // }
-  //
-  // &--belukha {
-  //   padding: 206px 38px 0 22px;
-  // }
-  //
-  // &--blacksea {
-  //   padding: 206px 45px 0 22px;
-  // }
 }
 
 .offers__item h3 {
@@ -349,7 +315,7 @@
 
 .offers__link {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 59px;
   transform: translateX(-8px);
   position: relative;
 
@@ -408,6 +374,16 @@
   }
 }
 
+.offers__groups {
+  @media (max-width: $mobiles-max) {
+    margin-right: 6px;
+  }
+}
+
 .offers__dates {
   margin-left: -9px;
+
+  @media (max-width: $mobiles-max) {
+    margin-left: 0;
+  }
 }

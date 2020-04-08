@@ -1,4 +1,5 @@
 .feedback__form-wrap {
+  background-color: #ffffff;
   background-image: url("../img/clouds-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: bottom -48px center;
@@ -30,7 +31,6 @@
   @media (max-width: $mobiles-max) {
     background-image: url("../img/clouds-mobile@1x.png");
     background-repeat: no-repeat;
-    // background-position: bottom -45px center;
     background-size: cover;
     padding-top: 159px;
     padding-bottom: 104px;

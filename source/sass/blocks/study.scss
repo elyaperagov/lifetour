@@ -117,7 +117,6 @@
     background-position: center;
     top: 20px;
     left: 4px;
-    // transform: translateX(-3px);
   }
 }
 
@@ -223,7 +222,6 @@
   }
 
   &--movement {
-    // width: 240px;
     margin-right: 21px;
 
     @media (max-width: $tablets-max) {
@@ -242,7 +240,6 @@
   }
 
   &--equipment {
-    // width: 260px;
     margin-right: 26px;
 
     @media (max-width: $tablets-max) {
@@ -257,7 +254,6 @@
   }
 
   &--ecology {
-    // width: 210px;
     margin-right: 37px;
 
     @media (max-width: $tablets-max) {
@@ -273,8 +269,6 @@
   }
 
   &--obstacles {
-    // width: 250px;
-
     @media (max-width: $tablets-max) {
       margin-right: 0;
       padding-top: 123px;

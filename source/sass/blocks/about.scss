@@ -35,7 +35,7 @@
   width: 58%;
   min-height: 544px;
   background-size: contain;
-  // z-index: -1;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/about-desktop@2x.jpg");
   }
@@ -55,7 +55,6 @@
   @media (max-width: $mobiles-max) {
     background-image: url("../img/about-mobile@1x.jpg");
     background-repeat: no-repeat;
-    // background-position: left top 57px;
     background-position: left top;
     width: 100%;
     background-size: contain;
@@ -146,7 +145,7 @@
 
 .about__inner {
   width: 50%;
-  padding-top: 71px;
+  padding-top: 72px;
   padding-left: 6px;
   padding-right: 121px;
 

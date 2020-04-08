@@ -4,8 +4,6 @@
 
 .gallery__inner {
   padding: 0 11px 44px 14px;
-  // overflow: hidden;
-  // max-width: 720px;
 
   @media (max-width: $tablets-max) {
     padding: 0 110px 35px 112px;
@@ -53,6 +51,7 @@
   @media (max-width: $tablets-max) {
     font-size: 25px;
     line-height: 30px;
+    padding: 32px 0 15px;
   }
 
   @media (max-width: $mobiles-max) {
