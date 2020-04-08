@@ -32,6 +32,16 @@
   cursor: pointer;
   color: #000000;
   text-decoration: none;
+
+  &:hover {
+    color: #0266c1;
+  }
+}
+
+.footer__link {
+  &:hover {
+    color: #0266c1;
+  }
 }
 
 

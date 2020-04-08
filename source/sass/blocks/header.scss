@@ -20,12 +20,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    // background-image: url("../img/main-background-mobile@1x.png");
     background-position: 71% bottom;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // min-height: 470px;
-    // width: 100%;
   }
 }
 
@@ -151,6 +146,10 @@
   line-height: 30px;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    color: #0266c1;
+  }
 
   @media (max-width: $tablets-max) {
     font-size: 16px;

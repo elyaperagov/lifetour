@@ -26,15 +26,17 @@
       <div class="header__content">
         <div class="header__logo-wrapper">
           <div class="header__logo">
-            <svg width="62" height="62" class="header__image header__image--desktop">
-              <use xlink:href="#logo-desktop"></use>
-            </svg>
-            <svg width="37" height="37" class="header__image header__image--tablet">
-              <use xlink:href="#logo-tablet"></use>
-            </svg>
-            <svg width="31" height="31" class="header__image header__image--mobile">
-              <use xlink:href="#logo-mobile"></use>
-            </svg>
+            <a href="index.html">
+              <svg width="62" height="62" class="header__image header__image--desktop">
+                <use xlink:href="#logo-desktop"></use>
+              </svg>
+              <svg width="37" height="37" class="header__image header__image--tablet">
+                <use xlink:href="#logo-tablet"></use>
+              </svg>
+              <svg width="31" height="31" class="header__image header__image--mobile">
+                <use xlink:href="#logo-mobile"></use>
+              </svg>
+            </a>
           </div>
           <div class="header__text">
             <p>Lifetour</p>
@@ -44,19 +46,19 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#" aria-label="Туры lifetour">Туры</a>
+              <a class="main-nav__link" href="#tours" aria-label="Туры lifetour">Туры</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#" aria-label="Обучение lifetour">Обучение</a>
+              <a class="main-nav__link" href="#study" aria-label="Обучение lifetour">Обучение</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#" aria-label="О lifetour">О нас</a>
+              <a class="main-nav__link" href="#about" aria-label="О lifetour">О нас</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#" aria-label="Отзывы lifetour">Отзывы</a>
+              <a class="main-nav__link" href="#reviews" aria-label="Отзывы lifetour">Отзывы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#" aria-label="Галерея lifetour">Фотографии</a>
+              <a class="main-nav__link" href="#gallery" aria-label="Галерея lifetour">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#" aria-label="Контакты lifetour">Контакты</a>
@@ -80,21 +82,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="#" aria-label="Lifetour в VK">
-                <svg width="12" height="8">
+                <svg width="12" height="8" class="social__icon">
                   <use xlink:href="#link-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#" aria-label="Lifetour в Фейсбуке">
-                <svg width="6" height="11">
+                <svg width="6" height="11" class="social__icon">
                   <use xlink:href="#link-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#" aria-label="Lifetour в Instagram">
-                <svg width="13" height="13" >
+                <svg width="13" height="13" class="social__icon">
                   <use xlink:href="#link-instagram"></use>
                 </svg>
               </a>
@@ -106,7 +108,7 @@
   </header>
   <main>
     <div class="offers-wrapper">
-      <section class="offers">
+      <section class="offers" id="tours">
         <div class="offers__inner container">
           <div class="offers__title-wrapper">
             <h2>Ближайшие туры</h2>
@@ -201,7 +203,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="study">
+      <section class="study" id="study">
         <div class="study__inner container">
           <h2>Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами,<br>
@@ -334,7 +336,7 @@
         </div>
       </section>
     </div>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__background"></div>
       <div class="about__inner">
         <div class="about__story">
@@ -352,7 +354,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="reviews__inner container">
         <div class="reviews__title-wrapper">
           <h2>Отзывы</h2>
@@ -425,7 +427,7 @@
         </ul>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="gallery__inner container">
         <div class="gallery__title-wrapper">
           <div class="gallery__title">
@@ -496,11 +498,13 @@
   <footer class="footer">
     <div class="footer__inner container">
       <div class="footer__logo-wrapper">
-        <div class="footer__logo">
-          <svg width="62" height="62" >
-            <use xlink:href="#logo-footer"></use>
-          </svg>
-        </div>
+        <a href="index.html">
+          <div class="footer__logo">
+            <svg width="62" height="62" >
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </div>
+        </a>
         <div class="footer__info">
           <p>Lifetour</p>
           <span>Организация походов в горы</span>

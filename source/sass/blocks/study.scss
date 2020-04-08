@@ -1,6 +1,21 @@
 .study {
   position: relative;
 
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/clouds-transparent.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 418px;
+    height: 279px;
+    top: -129px;
+
+    @media (max-width: $tablets-max) {
+      display: none;
+    }
+  }
+
   &::after {
     position: absolute;
     content: "";

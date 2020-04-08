@@ -1,6 +1,23 @@
 .about {
   display: flex;
   padding-bottom: 99px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/transparent-clouds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 618px;
+    height: 280px;
+    top: -50px;
+    right: 0;
+
+    @media (max-width: $tablets-max) {
+      display: none;
+    }
+  }
 
   @media (max-width: $tablets-max) {
     padding-bottom: 33px;

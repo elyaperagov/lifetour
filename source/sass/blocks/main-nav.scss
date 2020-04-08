@@ -16,4 +16,8 @@
 
 .main-nav__link {
   @include link;
+
+  &:hover {
+    color: #0266c1;
+  }
 }

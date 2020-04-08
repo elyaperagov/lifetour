@@ -28,7 +28,7 @@ var swiper = new Swiper('.offers__swiper-container', {
 
 var swiper = new Swiper('.instructors', {
   // slidesPerView: 5,
-  // spaceBetween: 6,
+  loop: true,
   freeMode: true,
   navigation: {
     nextEl: '.instructors__button-next',
