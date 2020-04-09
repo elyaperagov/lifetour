@@ -76,7 +76,7 @@
 .instructors__item {
   width: 232px;
   flex-shrink: 0;
-  padding: 9px 15px 0 14px;
+  padding: 9px 14px 0 14px;
   background: #ffffff;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -109,5 +109,10 @@
   @media (max-width: $tablets-max) {
     transform: translateY(-23px);
     margin-right: -5px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    transform: translateY(-23px);
+    margin-right: -1px;
   }
 }

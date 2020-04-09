@@ -28,7 +28,7 @@ var swiper = new Swiper('.offers__swiper-container', {
 
 var swiper = new Swiper('.instructors', {
   // slidesPerView: 5,
-  loop: true,
+  // loop: true,
   freeMode: true,
   navigation: {
     nextEl: '.instructors__button-next',
@@ -36,9 +36,9 @@ var swiper = new Swiper('.instructors', {
   },
   breakpoints: {
     1024: {
-      width: 1196,
+      // width: 1196,
       slidesPerView: 5,
-      spaceBetween: 7,
+      spaceBetween: 8,
     },
     768: {
       // slidesPerView: 2,
@@ -64,9 +64,9 @@ var swiper = new Swiper('.reviews__inner', {
   },
   breakpoints: {
     1024: {
-      width: 1225,
+      width: 1224,
       slidesPerView: 3,
-      spaceBetween: 18,
+      spaceBetween: 17,
     },
     768: {
       slidesPerView: 2,
@@ -83,7 +83,7 @@ var swiper = new Swiper('.reviews__inner', {
 
 var swiper = new Swiper('.gallery', {
   slidesPerView: 'auto',
-  spaceBetween: 3,
+  spaceBetween: 5,
   loop: true,
   freeMode: true,
   navigation: {

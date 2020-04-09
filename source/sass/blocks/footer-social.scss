@@ -2,7 +2,7 @@
   @include list;
   display: flex;
   justify-content: center;
-  padding: 5px 0 31px 0;
+  padding: 3px 0 31px 0;
 
   @media (max-width: $tablets-max) {
     padding: 51px 0 14px;

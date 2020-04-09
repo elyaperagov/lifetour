@@ -1,5 +1,5 @@
 .reviews__inner {
-  padding: 0 10px 83px 15px;
+  padding: 0 10px 85px 11px;
   overflow: hidden;
 
   @media (max-width: $tablets-max) {
@@ -24,6 +24,7 @@
   margin: 0;
   padding-bottom: 36px;
   position: relative;
+  padding-left: 3px;
 
   &::before {
     position: absolute;
@@ -66,42 +67,45 @@
 }
 
 .reviews__item {
-  width: 385.76px;
+  width: 388px;
   background: #ffffff;
   border: 1px solid #ffffff;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-  padding: 46px 7px 23px 30px;
+  // padding: 46px 7px 23px 30px;
+  padding: 43px 15px 43px 38px;
   flex-shrink: 0;
+  min-height: 504px;
 
-  &:nth-child(3n+1) {
+  &:nth-child(2n+1) {
     @media (min-width: $desktops) {
-      padding: 44px 12px 23px 35px;
-    }
-
-    @media (min-width: $tablets) {
-      padding: 46px 12px 23px 35px;
+      padding: 43px 15px 43px 30px;
     }
   }
+  //   @media (min-width: $tablets) {
+  //     padding: 46px 12px 23px 35px;
+  //   }
+  // }
 
-  &:nth-child(3n+3) {
-    @media (min-width: $desktops) {
-      padding: 41px 7px 23px 38px;
-    }
+  // &:nth-child(3n+3) {
+  //   @media (min-width: $desktops) {
+  //     padding: 41px 7px 23px 38px;
+  //   }
 
-    @media (min-width: $tablets) {
-      width: 388.76px;
-      padding: 46px 17px 23px 35px;
-    }
+  @media (min-width: $tablets) {
+    width: 388.76px;
+    padding: 46px 17px 42px 35px;
   }
 
   @media (max-width: $mobiles-max) {
     padding: 43px 8px 12px 12px;
+    min-height: 535px;
+    margin-bottom: 30px;
   }
 }
 
 .reviews__info {
   display: flex;
-  padding-bottom: 42px;
+  padding-bottom: 37px;
 
   @media (max-width: $mobiles-max) {
     img {
@@ -109,7 +113,7 @@
       height: 100px;
     }
 
-    padding-bottom: 19px;
+    padding-bottom: 13px;
   }
 }
 
@@ -138,12 +142,41 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/quotes-first.png");
+    left: 4px;
+    top: -9px;
+    width: 31px;
+    height: 22px;
+  }
 }
 
 .reviews__text p {
   margin: 0;
   padding-bottom: 20px;
   max-width: 343px;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.reviews__text span {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../img/quotes-second.png");
+    bottom: -15px;
+    left: -25px;
+    width: 31px;
+    height: 22px;
+  }
 }
 
 .reviews__title-wrapper {
