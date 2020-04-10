@@ -1,6 +1,6 @@
 .header {
   background-image: url("../img/main-background@1x.png");
-  background-position: center bottom -1px;
+  background-position: center bottom -2px;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #0266c1;
@@ -10,10 +10,11 @@
   }
 
   @media (max-width: $tablets-max) {
-    background-image: url("../img/main-background-tablet@1x.png");
-    background-position: center bottom -1px;
+    background: url("../img/main-background-tablet@1x.png");
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #0266c1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/main-background-tablet@2x.png");

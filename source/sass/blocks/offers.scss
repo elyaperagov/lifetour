@@ -110,6 +110,7 @@
   color: #ffffff;
   padding: 50px 0 0;
   z-index: 2;
+  overflow: hidden;
 
   @media (max-width: $tablets-max) {
     padding: 57px 0 0;

@@ -26,8 +26,7 @@
     }
   });
 
-  offersSwiper.slideNext(2, false);
-  offersSwiper.slidePrev(2, false);
+  offersSwiper.mousewheel.enable();
 
   var instructorsSwiper = new Swiper('.instructors', {
     loop: true,
@@ -52,8 +51,7 @@
     }
   });
 
-  instructorsSwiper.slideNext(3, false);
-  instructorsSwiper.slidePrev(3, false);
+  instructorsSwiper.lazy.load();
 
   var reviewsSwiper = new Swiper('.reviews__inner', {
     slidesPerView: 3,
@@ -82,8 +80,7 @@
     }
   });
 
-  reviewsSwiper.slideNext(7, false);
-  reviewsSwiper.slidePrev(7, false);
+  reviewsSwiper.keyboard.enable();
 
   var gallerySwiper = new Swiper('.gallery', {
     slidesPerView: 'auto',
@@ -96,8 +93,7 @@
     },
   });
 
-  gallerySwiper.slideNext(10, false);
-  gallerySwiper.slidePrev(10, false);
+  gallerySwiper.keyboard.enable();
 
 
   $(function () {
