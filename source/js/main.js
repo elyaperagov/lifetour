@@ -1,4 +1,3 @@
-/*eslint-disable*/
 'use strict';
 (function () {
   var offersSwiper = new Swiper('.offers__swiper-container', {
@@ -27,6 +26,9 @@
     }
   });
 
+  offersSwiper.slideNext(2, false);
+  offersSwiper.slidePrev(2, false);
+
   var instructorsSwiper = new Swiper('.instructors', {
     loop: true,
     freeMode: true,
@@ -49,6 +51,9 @@
       },
     }
   });
+
+  instructorsSwiper.slideNext(3, false);
+  instructorsSwiper.slidePrev(3, false);
 
   var reviewsSwiper = new Swiper('.reviews__inner', {
     slidesPerView: 3,
@@ -77,6 +82,9 @@
     }
   });
 
+  reviewsSwiper.slideNext(7, false);
+  reviewsSwiper.slidePrev(7, false);
+
   var gallerySwiper = new Swiper('.gallery', {
     slidesPerView: 'auto',
     spaceBetween: 5,
@@ -87,6 +95,9 @@
       prevEl: '.gallery__button-prev',
     },
   });
+
+  gallerySwiper.slideNext(10, false);
+  gallerySwiper.slidePrev(10, false);
 
 
   $(function () {
