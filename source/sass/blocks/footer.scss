@@ -16,11 +16,6 @@
   }
 }
 
-.footer__logo {
-  padding: 0 20px 0 0;
-  align-items: center;
-}
-
 .footer__info p {
   font-style: italic;
   font-weight: 800;
@@ -76,11 +71,37 @@
 }
 
 .footer__logo-wrapper {
-  display: flex;
-
   @media (max-width: $tablets-max) {
     width: 292px;
-    padding-left: 33px;
-    padding-bottom: 10px;
+    padding-left: 36px;
+    padding-bottom: 16px;
+  }
+}
+
+.footer__logo-tablet {
+  display: none;
+
+  @media (max-width: $tablets-max) {
+    display: block;
+  }
+
+  @media (max-width: $mobiles-max) {
+    display: none;
+  }
+}
+
+.footer__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktops) {
+    display: block;
+  }
+}
+
+.footer__logo-mobile {
+  display: none;
+
+  @media (max-width: $mobiles-max) {
+    display: block;
   }
 }

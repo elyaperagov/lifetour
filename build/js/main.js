@@ -1,7 +1,7 @@
 'use strict';
 (function () {
   var offersSwiper = new Swiper('.offers__swiper-container', {
-    // freeMode: true,
+    freeMode: true,
     loop: true,
     navigation: {
       nextEl: '.offers__button-next',
@@ -16,7 +16,7 @@
       768: {
         slidesPerView: 2,
         spaceBetween: 20,
-        width: 600,
+        width: 785,
       },
       320: {
         slidesPerView: 2,
@@ -26,7 +26,7 @@
     }
   });
 
-  offersSwiper.touches;
+  offersSwiper.mousewheel.enable();
 
   var instructorsSwiper = new Swiper('.instructors', {
     loop: true,

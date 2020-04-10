@@ -69,59 +69,6 @@
   }
 }
 
-.header__text {
-  margin: 13px 0 -5px 0;
-
-  @media (max-width: $tablets-max) {
-    margin: 5px 0 0 5px;
-  }
-
-  @media (max-width: $mobiles-max) {
-    margin: 3px 0 0 3px;
-  }
-}
-
-.header__text p {
-  font-style: italic;
-  font-weight: 800;
-  font-size: 23px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-
-  @media (max-width: $tablets-max) {
-    font-size: 16px;
-    line-height: 17px;
-    transform: translateY(8px);
-  }
-
-  @media (max-width: $mobiles-max) {
-    font-size: 12px;
-    line-height: 10px;
-  }
-}
-
-.header__text span {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 10px;
-  color: #ffffff;
-
-  @media (max-width: $tablets-max) {
-    font-size: 6px;
-    line-height: 7px;
-  }
-
-  @media (max-width: $mobiles-max) {
-    font-size: 4.34769px;
-    line-height: 5px;
-    white-space: nowrap;
-  }
-}
-
 .header__phone {
   margin: 0;
   padding-top: 4px;
