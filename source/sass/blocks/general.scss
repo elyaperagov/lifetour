@@ -42,6 +42,7 @@
   line-height: 55px;
   color: #ffffff;
   margin: 0;
+  position: relative;
 
   &::after {
     position: absolute;
@@ -49,8 +50,8 @@
     font-weight: 900;
     font-size: 93px;
     line-height: 113px;
-    top: 249px;
-    left: 8.4%;
+    top: -45px;
+    left: 0;
     color: #f5f9fc;
     opacity: 0.2;
     letter-spacing: 7px;
@@ -58,16 +59,16 @@
     @media (max-width: $tablets-max) {
       font-size: 69px;
       line-height: 84px;
-      top: 172px;
-      left: 117px;
+      top: -34px;
+      left: 0;
       letter-spacing: 5px;
     }
 
     @media (max-width: $mobiles-max) {
       font-size: 41px;
       line-height: 50px;
-      top: 133px;
-      left: 24px;
+      top: -12px;
+      left: 0;
     }
   }
 
