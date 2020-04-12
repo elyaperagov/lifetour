@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "del": "^4.1.1",
+    "express": "^4.17.1",
     "owl.carousel": "^2.3.4"
   }
 }
