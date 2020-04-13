@@ -86,7 +86,7 @@
     reviewsSwiper.keyboard.enable();
   }
 
-  if (document.querySelector('.reviews__inner')) {
+  if (document.querySelector('.gallery')) {
     var gallerySwiper = new Swiper('.gallery', {
       slidesPerView: 'auto',
       spaceBetween: 5,
@@ -97,9 +97,8 @@
         prevEl: '.gallery__button-prev',
       },
     });
-    gallerySwiper.keyboard.enable();
+    gallerySwiper.mousewheel.enable();
   }
-
 
   $(function () {
     $('#feedback__phone-input').mask('+7(999) 999-9999');
