@@ -254,21 +254,6 @@
     }
   }
 
-  &--ecology {
-    margin-right: 37px;
-
-    @media (max-width: $tablets-max) {
-      margin-right: 0;
-      padding-top: 123px;
-      order: 4;
-
-      &::after {
-        top: 99px;
-        left: 109px;
-      }
-    }
-  }
-
   &--obstacles {
     @media (max-width: $tablets-max) {
       margin-right: 0;
@@ -285,6 +270,27 @@
   @media (max-width: $mobiles-max) {
     width: 100%;
     padding: 8px 0 0 0;
+  }
+
+  &--ecology {
+    margin-right: 37px;
+    padding-right: 81px;
+
+    @media (max-width: $tablets-max) {
+      margin-right: 0;
+      padding-top: 123px;
+      padding-right: 40px;
+      order: 4;
+
+      &::after {
+        top: 99px;
+        left: 109px;
+      }
+    }
+
+    @media (max-width: $mobiles-max) {
+      padding: 8px 48px 0 0;
+    }
   }
 
   p {

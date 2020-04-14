@@ -9,7 +9,6 @@
     position: absolute;
     content: "";
     background-color: transparent;
-    background-image: url("../img/unsplash-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 559px;
@@ -18,29 +17,67 @@
     top: -39px;
     z-index: 1;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/unsplash-desktop@2x.png");
-    }
-
     @media (max-width: $tablets-max) {
-      background-image: url("../img/unsplash-tablet@1x.png");
       width: 294px;
       right: 0;
       top: 116px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      height: 828px;
+      width: 214px;
+      top: 36px;
+    }
+  }
+}
+
+.no-webp .offers {
+  &::after {
+    background-image: url("../img/unsplash-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/unsplash-desktop@2x.jpg");
+    }
+
+    @media (max-width: $tablets-max) {
+      background-image: url("../img/unsplash-tablet@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/unsplash-tablet@2x.png");
+        background-image: url("../img/unsplash-tablet@2x.jpg");
       }
     }
 
     @media (max-width: $mobiles-max) {
-      background-image: url("../img/unsplash-mobile@1x.png");
-      height: 828px;
-      width: 214px;
-      top: 36px;
+      background-image: url("../img/unsplash-mobile@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/unsplash-mobile@2x.png");
+        background-image: url("../img/unsplash-mobile@2x.jpg");
+      }
+    }
+  }
+}
+
+.webp .offers {
+  &::after {
+    background-image: url("../img/unsplash-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/unsplash-desktop@2x.webp");
+    }
+
+    @media (max-width: $tablets-max) {
+      background-image: url("../img/unsplash-tablet@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/unsplash-tablet@2x.webp");
+      }
+    }
+
+    @media (max-width: $mobiles-max) {
+      background-image: url("../img/unsplash-mobile@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/unsplash-mobile@2x.webp");
       }
     }
   }
@@ -151,6 +188,31 @@
 
   &--elbrus {
     padding: 206px 56px 20px 22px;
+
+    @media (max-width: $mobiles-max) {
+      padding: 153px 14px 20px 8px;
+    }
+  }
+
+  &--belukha {
+    padding: 206px 38px 20px 22px;
+
+    @media (max-width: $mobiles-max) {
+      padding: 153px 14px 20px 8px;
+    }
+  }
+
+  &--blacksea {
+    padding: 206px 45px 20px 22px;
+
+    @media (max-width: $mobiles-max) {
+      padding: 153px 14px 20px 8px;
+    }
+  }
+}
+
+.no-webp .offers__item {
+  &--elbrus {
     background-image: url("../img/elbrus-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -158,8 +220,6 @@
     }
 
     @media (max-width: $mobiles-max) {
-      padding: 153px 14px 20px 8px;
-
       background-image: url("../img/elbrus-mobile@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -170,16 +230,12 @@
 
   &--belukha {
     background-image: url("../img/belukha-desktop@1x.jpg");
-    padding: 206px 38px 20px 22px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/belukha-desktop@2x.jpg");
     }
 
-
     @media (max-width: $mobiles-max) {
-      padding: 153px 14px 20px 8px;
-
       background-image: url("../img/belukha-mobile@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -190,20 +246,66 @@
 
   &--blacksea {
     background-image: url("../img/blacksea-desktop@1x.jpg");
-    padding: 206px 45px 20px 22px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/blacksea-desktop@2x.jpg");
     }
 
-
     @media (max-width: $mobiles-max) {
-      padding: 153px 14px 20px 8px;
-
       background-image: url("../img/blacksea-mobile@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/blacksea-mobile@2x.jpg");
+      }
+    }
+  }
+}
+
+.webp .offers__item {
+  &--elbrus {
+    background-image: url("../img/elbrus-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/elbrus-desktop@2x.webp");
+    }
+
+    @media (max-width: $mobiles-max) {
+      background-image: url("../img/elbrus-mobile@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/elbrus-mobile@2x.webp");
+      }
+    }
+  }
+
+  &--belukha {
+    background-image: url("../img/belukha-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/belukha-desktop@2x.webp");
+    }
+
+    @media (max-width: $mobiles-max) {
+      background-image: url("../img/belukha-mobile@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/belukha-mobile@2x.webp");
+      }
+    }
+  }
+
+  &--blacksea {
+    background-image: url("../img/blacksea-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/blacksea-desktop@2x.webp");
+    }
+
+    @media (max-width: $mobiles-max) {
+      background-image: url("../img/blacksea-mobile@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/blacksea-mobile@2x.webp");
       }
     }
   }
