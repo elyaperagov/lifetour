@@ -26,6 +26,11 @@
   z-index: 2;
 }
 
+.instructors__button-next,
+.instructors__button-prev {
+  outline: none;
+}
+
 .instructors h3 {
   margin: 0;
   padding: 44px 0 39px 1px;

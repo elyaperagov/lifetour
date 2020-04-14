@@ -1,10 +1,10 @@
 .general {
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
 .general__inner {
-  padding: 184px 0 129px 1px;
+  padding: 184px 0 129px 10px;
 
   @media (max-width: $tablets-max) {
     padding: 123px 112px 94px;
@@ -17,11 +17,11 @@
 
 .general__slogan {
   max-width: 495px;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
 
   @media (max-width: $tablets-max) {
     max-width: 405px;
-    padding-bottom: 31px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $tablets) {
@@ -32,7 +32,7 @@
 
   @media (max-width: $mobiles-max) {
     max-width: 215px;
-    padding-bottom: 27px;
+    padding-bottom: 15px;
   }
 }
 
@@ -108,20 +108,29 @@
   }
 }
 
-.general__excursions {
-  @include link;
-  background-color: #0266c1;
-  font-family: "Montserrat", "Arial", sans-serif;
-  padding: 20px 40px;
 
-  &:hover,
-  &:focus {
-    opacity: 0.7;
+.general__excursions {
+  padding: 18.5px 40px;
+  background-color: #0266c1;
+  width: 246px;
+
+  @media (max-width: $tablets-max) {
+    padding: 14px 22px;
+    width: 191px;
   }
+
+  @media (max-width: $mobiles-max) {
+    padding: 12px 22px;
+    width: 191px;
+  }
+}
+
+.general__excursions a {
+  @include link;
+  font-family: "Montserrat", "Arial", sans-serif;
 
   @media (max-width: $tablets-max) {
     font-size: 14px;
     line-height: 22px;
-    padding: 14px 23px;
   }
 }

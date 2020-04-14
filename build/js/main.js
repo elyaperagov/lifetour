@@ -100,8 +100,4 @@
     gallerySwiper.mousewheel.enable();
   }
 
-  $(function () {
-    $('#feedback__phone-input').mask('+7(999) 999-9999');
-  });
-
 })();

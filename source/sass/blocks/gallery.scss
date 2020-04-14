@@ -14,6 +14,11 @@
   }
 }
 
+.gallery__button-next,
+.gallery__button-prev {
+  outline: none;
+}
+
 .gallery__inner h2 {
   font-weight: 800;
   font-size: 35px;

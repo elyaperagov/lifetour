@@ -1,11 +1,12 @@
 .feedback__form-wrap {
-  background-color: #f4fcf4;
+  background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: bottom -48px center;
+  background-position: bottom -35px center;
   background-size: cover;
   text-align: center;
-  padding-top: 280px;
+  padding-top: 279px;
   padding-bottom: 254px;
+  height: 727px;
   color: #ffffff;
 
   @media (max-width: $tablets-max) {
@@ -25,7 +26,8 @@
     background-size: cover;
     padding-top: 159px;
     padding-bottom: 104px;
-    background-position: bottom -111px center;
+    background-position: bottom -112px center;
+    height: 610px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-position: bottom -23px center;
@@ -126,7 +128,7 @@
 .feedback__fieldset {
   display: flex;
   margin: 0 auto;
-  width: 68.5%;
+  width: 985px;
   justify-content: space-between;
 
   @media (max-width: $tablets-max) {

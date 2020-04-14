@@ -140,7 +140,7 @@
   @media (max-width: $mobiles-max) {
     font-size: 22px;
     line-height: 27px;
-    padding: 60px 0 0;
+    padding: 45px 0 0;
   }
 }
 
@@ -181,7 +181,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 153px 14px 20px 8px;
+    padding: 153px 14px 23px 8px;
     width: 281px;
     height: 100%;
   }
@@ -190,7 +190,7 @@
     padding: 206px 56px 20px 22px;
 
     @media (max-width: $mobiles-max) {
-      padding: 153px 14px 20px 8px;
+      padding: 153px 14px 23px 8px;
     }
   }
 
@@ -198,7 +198,7 @@
     padding: 206px 38px 20px 22px;
 
     @media (max-width: $mobiles-max) {
-      padding: 153px 14px 20px 8px;
+      padding: 153px 14px 23px 8px;
     }
   }
 
@@ -206,7 +206,7 @@
     padding: 206px 45px 20px 22px;
 
     @media (max-width: $mobiles-max) {
-      padding: 153px 14px 20px 8px;
+      padding: 153px 14px 23px 8px;
     }
   }
 }
@@ -482,6 +482,11 @@
   @media (max-width: $mobiles-max) {
     transform: translateY(-2px);
   }
+}
+
+.offers__button-next,
+.offers__button-prev {
+  outline: none;
 }
 
 .offers__groups {
