@@ -23,6 +23,7 @@
     height: 1px;
     background-color: #d9e7ea;
     bottom: 31px;
+    z-index: -1;
 
     @media (max-width: $tablets-max) {
       display: none;
@@ -80,6 +81,17 @@
 
 .study__process {
   position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 16px 0 13px;
+
+  @media (max-width: $tablets-max) {
+    padding: 0 110px 0 113px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding: 0 20px 0 19px;
+  }
 
   h3 {
     margin: 0;
@@ -131,7 +143,6 @@
     left: 4px;
   }
 }
-
 
 .study__inner h2 {
   font-weight: 800;
@@ -285,7 +296,7 @@
 
   &--ecology {
     margin-right: 37px;
-    padding-right: 81px;
+    padding-right: 82px;
 
     @media (max-width: $tablets-max) {
       margin-right: 0;
