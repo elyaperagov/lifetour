@@ -4,7 +4,6 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/clouds-transparent.png");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,6 +27,18 @@
     @media (max-width: $tablets-max) {
       display: none;
     }
+  }
+}
+
+.no-webp .study {
+  &::before {
+    background-image: url("../img/clouds-transparent.png");
+  }
+}
+
+.webp .study {
+  &::before {
+    background-image: url("../img/clouds-transparent.webp");
   }
 }
 
