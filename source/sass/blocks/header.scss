@@ -128,31 +128,35 @@
   }
 }
 
-.header__image--tablet {
-  display: none;
+.header__image {
+  cursor: pointer;
 
-  @media (max-width: $tablets-max) {
-    display: block;
-  }
-
-  @media (max-width: $mobiles-max) {
+  &--tablet {
     display: none;
+
+    @media (max-width: $tablets-max) {
+      display: block;
+    }
+
+    @media (max-width: $mobiles-max) {
+      display: none;
+    }
   }
-}
 
-.header__image--desktop {
-  display: none;
+  &--desktop {
+    display: none;
 
-  @media (min-width: $desktops) {
-    display: block;
+    @media (min-width: $desktops) {
+      display: block;
+    }
   }
-}
 
-.header__image--mobile {
-  display: none;
+  &--mobile {
+    display: none;
 
-  @media (max-width: $mobiles-max) {
-    display: block;
+    @media (max-width: $mobiles-max) {
+      display: block;
+    }
   }
 }
 
