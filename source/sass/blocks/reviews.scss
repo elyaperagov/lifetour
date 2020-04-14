@@ -1,5 +1,5 @@
 .reviews__inner {
-  padding: 0 10px 85px 11px;
+  padding: 0 10px 85px 17px;
   overflow: hidden;
 
   @media (max-width: $tablets-max) {
@@ -24,7 +24,7 @@
   margin: 0;
   padding-bottom: 36px;
   position: relative;
-  padding-left: 3px;
+  padding-left: 1px;
 
   &::before {
     position: absolute;
@@ -77,7 +77,7 @@
 
   &:nth-child(2n+1) {
     @media (min-width: $desktops) {
-      padding: 43px 15px 43px 30px;
+      padding: 43px 13px 43px 30px;
     }
   }
 
