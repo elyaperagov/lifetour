@@ -73,7 +73,6 @@
   background-image: url("../img/about-desktop@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-position: left top 30px;
     background-image: url("../img/about-desktop@2x.jpg");
   }
 
@@ -98,7 +97,6 @@
   background-image: url("../img/about-desktop@1x.webp");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-position: left top 30px;
     background-image: url("../img/about-desktop@2x.webp");
   }
 
