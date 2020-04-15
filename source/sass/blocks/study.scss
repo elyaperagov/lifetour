@@ -109,7 +109,7 @@
     @media (max-width: $mobiles-max) {
       font-size: 16px;
       line-height: 20px;
-      padding: 29px 0 23px;
+      padding: 27px 0 23px;
     }
   }
 }
@@ -296,7 +296,12 @@
 
   &--ecology {
     margin-right: 37px;
-    padding-right: 82px;
+
+    @media (min-width: $tablets) {
+      p {
+        max-width: 194px;
+      }
+    }
 
     @media (max-width: $tablets-max) {
       margin-right: 0;

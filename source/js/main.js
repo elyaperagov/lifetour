@@ -26,7 +26,7 @@
         },
       }
     });
-    offersSwiper.mousewheel.enable();
+    offersSwiper.setGrabCursor();
   }
 
   if (document.querySelector('.instructors')) {
@@ -97,7 +97,7 @@
         prevEl: '.gallery__button-prev',
       },
     });
-    gallerySwiper.mousewheel.enable();
+    gallerySwiper.setGrabCursor();
   }
 
 })();

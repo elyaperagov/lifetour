@@ -16,7 +16,7 @@
 
   @media (max-width: $mobiles-max) {
     flex-direction: column;
-    padding: 39px 11px 0 15px;
+    padding: 39px 11px 0 13px;
   }
 }
 
@@ -79,6 +79,10 @@
     width: 292px;
     padding-left: 36px;
     padding-bottom: 16px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding-bottom: 19px;
   }
 }
 

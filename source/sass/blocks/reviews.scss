@@ -1,5 +1,5 @@
 .reviews__inner {
-  padding: 0 10px 85px 17px;
+  padding: 3px 10px 85px 16px;
   overflow: hidden;
 
   @media (max-width: $tablets-max) {
@@ -21,7 +21,7 @@
   font-weight: 800;
   font-size: 35px;
   line-height: 43px;
-  margin: 0;
+  margin: 0 0 0 -3px;
   padding-bottom: 36px;
   position: relative;
   padding-left: 1px;
@@ -56,6 +56,7 @@
     font-size: 25px;
     line-height: 30px;
     padding-top: 54px;
+    margin: 0;
   }
 
   @media (max-width: $mobiles-max) {
@@ -147,6 +148,12 @@
     top: -9px;
     width: 31px;
     height: 22px;
+  }
+
+  &--second-review {
+    p:nth-of-type(2) {
+      margin-top: -20px;
+    }
   }
 }
 
