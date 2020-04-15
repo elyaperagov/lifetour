@@ -7,11 +7,6 @@
   <title>Lifetour</title>
   <meta name="description" content="Lifetour - профессионально организовываем экскурсии на самые красивые вершины страны">
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="fonts/Montserrat-Regular.woff2" rel="preload" as="font">
-  <link href="fonts/Montserrat-Medium.woff2" rel="preload" as="font">
-  <link href="fonts/Montserrat-Bold.woff2" rel="preload" as="font">
-  <link href="fonts/Montserrat-ExtraBold.woff2" rel="preload" as="font">
-  <link href="fonts/Montserrat-Light.woff2" rel="preload" as="font">
 </head>
 <body>
   <div class="wrapper">
@@ -226,9 +221,9 @@
                 <ul class="instructors__list swiper-wrapper">
                   <li class="instructors__item swiper-slide">
                     <picture>
-                      <source srcset="img/prokofiev-desktop@1x.webp 1x, img/prokofiev-desktop@2x.webp 2x" type="image/webp">
+                      <source data-srcset="img/prokofiev-desktop@1x.webp 1x, img/prokofiev-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                       <!-- 1х: 204 x 212; 2x: 407 x 424 -->
-                      <img src="img/prokofiev-desktop@1x.jpg" srcset="img/prokofiev-desktop@2x.jpg 2x" width="204" height="212" alt="инструктор Прокофьев">
+                      <img data-src="img/prokofiev-desktop@1x.jpg 1x" data-srcset="img/prokofiev-desktop@2x.jpg 2x" class="lazyload" width="204" height="212" alt="инструктор Прокофьев">
                     </picture>
                     <div class="instructors__inner">
                       <h4>Александр Прокофьев</h4>
@@ -242,9 +237,9 @@
                   </li>
                   <li class="instructors__item swiper-slide">
                     <picture>
-                      <source srcset="img/afinogenova-desktop@1x.webp 1x, img/afinogenova-desktop@2x.webp 2x" type="image/webp">
+                      <source data-srcset="img/afinogenova-desktop@1x.webp 1x, img/afinogenova-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                       <!-- 1х: 205 x 210; 2x: 408 x 420 -->
-                      <img src="img/afinogenova-desktop@1x.jpg" srcset="img/afinogenova-desktop@2x.jpg 2x" width="205" height="210" alt="инструктор Афиногенова">
+                      <img data-src="img/afinogenova-desktop@1x.jpg" data-srcset="img/afinogenova-desktop@2x.jpg 2x" class="lazyload" width="205" height="210" alt="инструктор Афиногенова">
                     </picture>
                     <div class="instructors__inner">
                       <h4>Светлана Афиногенова</h4>
@@ -259,9 +254,9 @@
                   </li>
                   <li class="instructors__item swiper-slide">
                     <picture>
-                      <source srcset="img/kolesnichenko-desktop@1x.webp 1x, img/kolesnichenko-desktop@2x.webp 2x" type="image/webp">
+                      <source data-srcset="img/kolesnichenko-desktop@1x.webp 1x, img/kolesnichenko-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                       <!-- 1х: 205 x 210; 2x: 408 x 420 -->
-                      <img src="img/kolesnichenko-desktop@1x.jpg" srcset="img/kolesnichenko-desktop@2x.jpg 2x" width="205" height="210" alt="инструктор Колесниченко">
+                      <img data-src="img/kolesnichenko-desktop@1x.jpg" data-srcset="img/kolesnichenko-desktop@2x.jpg 2x"class="lazyload" width="205" height="210" alt="инструктор Колесниченко">
                     </picture>
                     <div class="instructors__inner">
                       <h4>Надежда Колесниченко</h4>
@@ -276,9 +271,9 @@
                   </li>
                   <li class="instructors__item swiper-slide">
                     <picture>
-                      <source srcset="img/kaygorodov-desktop@1x.webp 1x, img/kaygorodov-desktop@2x.webp 2x"  type="image/webp">
+                      <source data-srcset="img/kaygorodov-desktop@1x.webp 1x, img/kaygorodov-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                       <!-- 1х: 205 x 210; 2x: 408 x 420 -->
-                      <img src="img/kaygorodov-desktop@1x.jpg" srcset="img/kaygorodov-desktop@2x.jpg 2x" width="205" height="210" alt="инструктор Кайгородов">
+                      <img data-src="img/kaygorodov-desktop@1x.jpg" data-srcset="img/kaygorodov-desktop@2x.jpg 2x" class="lazyload" width="205" height="210" alt="инструктор Кайгородов">
                     </picture>
                     <div class="instructors__inner">
                       <h4>Федор Кайгородов</h4>
@@ -293,9 +288,9 @@
                   </li>
                   <li class="instructors__item swiper-slide">
                     <picture>
-                      <source srcset="img/denisov-desktop@1x.webp 1x, img/denisov-desktop@2x.webp 2x" type="image/webp">
+                      <source data-srcset="img/denisov-desktop@1x.webp 1x, img/denisov-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                       <!-- 1х: 204 x 210; 2x: 407 x 420 -->
-                      <img src="img/denisov-desktop@1x.jpg" srcset="img/denisov-desktop@2x.jpg 2x" width="204" height="210" alt="инструктор Денисов">
+                      <img data-src="img/denisov-desktop@1x.jpg" data-srcset="img/denisov-desktop@2x.jpg 2x" class="lazyload" width="204" height="210" alt="инструктор Денисов">
                     </picture>
                     <div class="instructors__inner">
                       <h4>Сергей Денисов</h4>
@@ -386,9 +381,9 @@
               <li class="reviews__item swiper-slide">
                 <div class="reviews__info">
                   <picture>
-                    <source srcset="img/frolov-desktop@1x.webp 1x, img/frolov-desktop@2x.webp 2x" type="image/webp">
+                    <source data-srcset="img/frolov-desktop@1x.webp 1x, img/frolov-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                     <!-- 1х: 97 x 100; 2x: 193 x 200 -->
-                    <img src="img/frolov-desktop@1x.jpg" srcset="img/frolov-desktop@2x.jpg 2x" width="97" height="100" alt="Александр Фролов отзыв">
+                    <img data-src="img/frolov-desktop@1x.jpg" data-srcset="img/frolov-desktop@2x.jpg 2x" class="lazyload" width="97" height="100" alt="Александр Фролов отзыв">
                   </picture>
                   <div class="reviews__user-info">
                     <p>Фролов Александр</p>
@@ -409,9 +404,9 @@
               <li class="reviews__item swiper-slide">
                 <div class="reviews__info">
                   <picture>
-                    <source srcset="img/oleynik-desktop@1x.webp 1x, img/oleynik-desktop@2x.webp 2x" type="image/webp">
+                    <source data-srcset="img/oleynik-desktop@1x.webp 1x, img/oleynik-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                     <!-- 1х: 97 x 100; 2x: 193 x 200 -->
-                    <img src="img/oleynik-desktop@1x.jpg" srcset="img/oleynik-desktop@2x.jpg 2x" width="97" height="100" alt="Светлана Олейник отзыв">
+                    <img data-src="img/oleynik-desktop@1x.jpg" data-srcset="img/oleynik-desktop@2x.jpg 2x" class="lazyload" width="97" height="100" alt="Светлана Олейник отзыв">
                   </picture>
                   <div class="reviews__user-info">
                     <p>Светлана Олейник</p>
@@ -433,9 +428,9 @@
               <li class="reviews__item swiper-slide">
                 <div class="reviews__info">
                   <picture>
-                    <source srcset="img/bazhenova-desktop@1x.webp 1x, img/bazhenova-desktop@2x.webp 2x" type="image/webp">
+                    <source data-srcset="img/bazhenova-desktop@1x.webp 1x, img/bazhenova-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                     <!-- 1х: 97 x 100; 2x: 193 x 200 -->
-                    <img src="img/bazhenova-desktop@1x.jpg" srcset="img/bazhenova-desktop@2x.jpg 2x" width="97" height="100" alt="Евгения Баженова отзыв">
+                    <img data-src="img/bazhenova-desktop@1x.jpg" data-srcset="img/bazhenova-desktop@2x.jpg 2x" class="lazyload" width="97" height="100" alt="Евгения Баженова отзыв">
                   </picture>
                   <div class="reviews__user-info">
                     <p>Евгения Баженова</p>
@@ -478,47 +473,47 @@
           <div class="pictures swiper-wrapper">
             <div class="pictures__item swiper-slide">
               <picture>
-                <source srcset="img/man-desktop@1x.webp 1x, img/man-desktop@2x.webp 2x" type="image/webp">
+                <source data-srcset="img/man-desktop@1x.webp 1x, img/man-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                 <!-- 1х: 275 x 449; 2x: 550 x 898 -->
-                <img src="img/man-desktop@1x.jpg" srcset="img/man-desktop@2x.jpg 2x" width="275" height="449" alt="Галерея фото№1">
+                <img data-src="img/man-desktop@1x.jpg" data-srcset="img/man-desktop@2x.jpg 2x" class="lazyload" width="275" height="449" alt="Галерея фото№1">
               </picture>
             </div>
             <div class="pictures__item pictures__item--column swiper-slide">
               <picture>
-                <source srcset="img/picnic-desktop@1x.webp 1x, img/picnic-desktop@2x.webp 2x" type="image/webp">
+                <source data-srcset="img/picnic-desktop@1x.webp 1x, img/picnic-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                 <!-- 1х: 298 x 179; 2x: 569 x 358 -->
-                <img src="img/picnic-desktop@1x.jpg" srcset="img/picnic-desktop@2x.jpg 2x" width="298" height="179" alt="Галерея фото№2">
+                <img data-src="img/picnic-desktop@1x.jpg" data-srcset="img/picnic-desktop@2x.jpg 2x" class="lazyload" width="298" height="179" alt="Галерея фото№2">
               </picture>
               <picture>
-                <source srcset="img/kompas-desktop@1x.webp 1x, img/kompas-desktop@2x.webp 2x" type="image/webp">
+                <source data-srcset="img/kompas-desktop@1x.webp 1x, img/kompas-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                 <!-- 1х: 298 x 265; 2x: 596 x 530 -->
-                <img src="img/kompas-desktop@1x.jpg" srcset="img/kompas-desktop@2x.jpg 2x" width="298" height="265" alt="Галерея фото№3">
+                <img data-src="img/kompas-desktop@1x.jpg" data-srcset="img/kompas-desktop@2x.jpg 2x" class="lazyload" width="298" height="265" alt="Галерея фото№3">
               </picture>
             </div>
             <div class="pictures__item swiper-slide">
               <picture>
-                <source srcset="img/mountain-desktop@1x.webp 1x, img/mountain-desktop@2x.webp 2x" type="image/webp">
+                <source data-srcset="img/mountain-desktop@1x.webp 1x, img/mountain-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                 <!-- 1х: 273 x 449; 2x: 545 x 898 -->
-                <img src="img/mountain-desktop@1x.jpg" srcset="img/mountain-desktop@2x.jpg 2x" width="273" height="449" alt="Галерея фото№4">
+                <img data-src="img/mountain-desktop@1x.jpg" data-srcset="img/mountain-desktop@2x.jpg 2x" class="lazyload" width="273" height="449" alt="Галерея фото№4">
               </picture>
             </div>
             <div class="pictures__item pictures__item--column swiper-slide">
               <picture>
-                <source srcset="img/snowing-desktop@1x.webp 1x, img/snowing-desktop@2x.webp 2x" type="image/webp">
+                <source data-srcset="img/snowing-desktop@1x.webp 1x, img/snowing-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                 <!-- 1х: 298 x 179; 2x: 596 x 358 -->
-                <img src="img/snowing-desktop@1x.jpg" srcset="img/snowing-desktop@2x.jpg 2x" width="298" height="179" alt="Галерея фото№5">
+                <img datasrc="img/snowing-desktop@1x.jpg" data-srcset="img/snowing-desktop@2x.jpg 2x" class="lazyload" width="298" height="179" alt="Галерея фото№5">
               </picture>
               <picture>
-                <source srcset="img/night-desktop@1x.webp 1x, img/night-desktop@2x.webp 2x" type="image/webp">
+                <source data-srcset="img/night-desktop@1x.webp 1x, img/night-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                 <!-- 1х: 298 x 265; 2x: 596 x 530 -->
-                <img src="img/night-desktop@1x.jpg" srcset="img/night-desktop@2x.jpg 2x" width="298" height="265" alt="Галерея фото№6">
+                <img data-src="img/night-desktop@1x.jpg" data-srcset="img/night-desktop@2x.jpg 2x" class="lazyload" width="298" height="265" alt="Галерея фото№6">
               </picture>
             </div>
             <div class="pictures__item swiper-slide">
               <picture>
-                <source srcset="img/forest-desktop@1x.webp 1x, img/forest-desktop@2x.webp 2x" type="image/webp">
+                <source data-srcset="img/forest-desktop@1x.webp 1x, img/forest-desktop@2x.webp 2x" class="lazyload" type="image/webp">
                 <!-- 1х: 276 x 448; 2x: 552 x 896 -->
-                <img src="img/forest-desktop@1x.jpg" srcset="img/forest-desktop@2x.jpg 2x" width="276" height="448" alt="Галерея фото№7">
+                <img data-src="img/forest-desktop@1x.jpg" data-srcset="img/forest-desktop@2x.jpg 2x" class="lazyload" width="276" height="448" alt="Галерея фото№7">
               </picture>
             </div>
           </div>
