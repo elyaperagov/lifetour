@@ -79,6 +79,14 @@
   }
 }
 
+.study__general {
+  @media (max-width: $mobiles-max) {
+    p {
+      max-width: 90%;
+    }
+  }
+}
+
 .study__process {
   position: relative;
   max-width: 1220px;
@@ -277,6 +285,14 @@
   }
 
   &--obstacles {
+    @media (min-width: $desktops) {
+      width: 19.88%;
+
+      p {
+        transform: translateX(-5px);
+      }
+    }
+
     @media (max-width: $tablets-max) {
       margin-right: 0;
       padding-top: 123px;

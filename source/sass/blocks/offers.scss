@@ -390,11 +390,16 @@
 }
 
 .offers__additional {
+  width: 333px;
   display: flex;
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
   justify-content: space-between;
+
+  @media (max-width: $mobiles-max) {
+    width: 285px;
+  }
 
   &--elbrus-tour {
     margin-right: -13px;
@@ -492,6 +497,8 @@
 }
 
 .offers__groups {
+  width: 80px;
+
   @media (max-width: $mobiles-max) {
     margin-right: 6px;
   }
